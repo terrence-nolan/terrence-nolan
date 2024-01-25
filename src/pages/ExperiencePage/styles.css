@@ -1,8 +1,11 @@
+@import '../../utils/colors.css';
+
 .expMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #DED6CA;
+    /*background-color: #DED6CA;*/
+    background-color: var(--gray-background);
     padding: 1em 0;
     overflow-x: hidden;
     font-size: calc(10px + 2vmin);
@@ -24,7 +27,7 @@
     display: flex;
     flex: 1;
     text-align: left;
-    background-color: #FEF5E7;
+    background-color: white;
     box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
     border-radius: 1em;
     margin: 1em;
@@ -33,6 +36,16 @@
     min-width: 20em;
     color: #2E4053;
     font-size: 0.85em;
+    animation: backgroundSlideIn 1s ease-out;
+}
+
+@keyframes backgroundSlideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .cardTop {

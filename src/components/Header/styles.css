@@ -1,14 +1,21 @@
 @import '../../utils/colors.css';
 
+body {
+    background-color: var(--gray-background);
+    margin-top: 3rem;
+}
+
 .app-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: .5rem;
     justify-content: space-between;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
     background-color: var(--gray-background);
 }
 
