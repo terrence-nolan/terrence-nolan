@@ -1,0 +1,84 @@
+.expMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DED6CA;
+    padding: 1em 0;
+    overflow-x: hidden;
+    font-size: calc(10px + 2vmin);
+    min-height: 100vh;
+
+    @media only screen and (min-width: 1000px) {
+        padding: 1em 5em;
+    }
+}
+
+.cardsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    text-align: left;
+    background-color: #FEF5E7;
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
+    min-width: 20em;
+    color: #2E4053;
+    font-size: 0.85em;
+}
+
+.cardTop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+}
+
+.leftText {
+    @media only screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.rightText {
+    text-align: left;
+
+    @media only screen and (min-width: 768px) {
+        text-align: right;
+    }
+}
+
+.flexSpacer {
+    @media only screen and (min-width: 768px) {
+        flex: 1;
+        min-width: 2em;
+    }
+}
+
+.list {
+    font-size: max(0.75em, 14px);
+    padding-left: 1.2em;
+}
+
+.image {
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    margin: 1rem;
+    align-self: center;
+    flex: 0 0 auto;
+    /* Don't grow, don't shrink, use content's intrinsic size */
+    max-height: 16em;
+    min-width: 12em;
+}

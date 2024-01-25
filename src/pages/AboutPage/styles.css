@@ -1,0 +1,31 @@
+.aboutMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #2E4053;
+    background-color: #DED6CA;
+    padding: 1em 0;
+    overflow-x: hidden;
+    font-size: calc(10px + 2vmin);
+    min-height: 100vh;
+
+    @media only screen and (min-width: 1000px) {
+        padding: 1em 5em;
+    }
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    text-align: left;
+    background-color: #FEF5E7;
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
+    min-width: 20em;
+    color: #2E4053;
+    font-size: 0.85em;
+}
