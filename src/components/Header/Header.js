@@ -45,8 +45,16 @@ const Header = ({ pageTitle }) => {
             <h1 className="header-title">{pageTitle}</h1>
             <div ref={sidebarRef} className="sidebar">
                 <div className="nav-list">
-                    <button onClick={closeNav} className="close-btn" aria-label="close-menu">
-                        <FontAwesomeIcon icon={faXmark} className="x-icon" />
+                    <button
+                        onClick={closeNav}
+                        className="close-btn"
+                        aria-label="close-menu"
+                    >
+                        <FontAwesomeIcon
+                            icon={faXmark}
+                            className="x-icon"
+                            size='2x'
+                        />
                     </button>
                     <Link to="/" onClick={closeNav} className="page-link">Home</Link>
                     <Link to="/about" onClick={closeNav} className="page-link">About Me</Link>
@@ -60,7 +68,11 @@ const Header = ({ pageTitle }) => {
                 className="bars-btn"
                 aria-label="menu"
             >
-                <FontAwesomeIcon icon={faBars} className="bars-icon" />
+                <FontAwesomeIcon
+                    icon={faBars}
+                    className="bars-icon"
+                    size='2x'
+                />
             </button>
         </header>
     );

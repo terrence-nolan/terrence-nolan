@@ -1,3 +1,5 @@
+@import '../../utils/colors.css';
+
 .app-header {
     display: flex;
     flex-direction: row;
@@ -7,8 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #CD6155;
-    color: #E5E8E8;
+    background-color: var(--gray-background);
 }
 
 /*.flex-spacer {*/
@@ -19,7 +20,7 @@
     text-align: center;
     margin-right: 0.5rem;
     text-decoration: none;
-    color: #E5E8E8;
+    color: var(--brick-red);
     font-weight: bold;
 }
 
@@ -29,14 +30,13 @@
 }
 
 .bars-icon {
-    font-size: 2rem;
-    color: #E5E8E8;
+    color: var(--brick-red);
     transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .bars-btn:hover .bars-icon {
-    transform: scale(1.1);
-    color: white;
+    /*transform: scale(1.1);*/
+    /*color: white;*/
 }
 
 .sidebar {
@@ -45,31 +45,32 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     right: 0;
-    background-color: #34495E;
-    box-shadow: 0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
+    background-color: var(--gray-background);
+    box-shadow: -0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
     overflow-x: hidden;
-    padding-top: 60px;
+    padding: 1rem 0 1rem 0;
     transition: 0.5s;
+    flex-direction: column;
+    white-space: nowrap;
 }
 
 .page-link {
     text-align: left;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    padding: 0 0 1rem 1rem;
     text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    color: #E5E8E8;
+    font-size: 1.2rem;
+    color: var(--brick-red);
     display: block;
     transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
 }
 
-.page-link:hover {
-    color: #55C1CD;
-    transform: scale(1.1);
-}
+/*.page-link:hover {*/
+/*    color: #55C1CD;*/
+/*}*/
 
 .close-btn {
     background: none;
@@ -80,17 +81,18 @@
 }
 
 .close-btn:hover .x-icon {
-    transform: scale(1.1);
-    color: #CD6155;
+    /*transform: scale(1.1);*/
+    color: var(--brick-red);
 }
 
 .x-icon {
-    font-size: 2.5rem;
-    color: #E5E8E8;
+    color: var(--brick-red);
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;;
 }
 
 .nav-list {
     display: flex;
     flex-direction: column;
+    padding-top: 0.5rem;
+    margin-top: 3.5rem;
 }
