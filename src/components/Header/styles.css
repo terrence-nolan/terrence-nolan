@@ -11,9 +11,9 @@
     color: #E5E8E8;
 }
 
-.flex-spacer {
-    flex: 1;
-}
+/*.flex-spacer {*/
+/*    flex: 1;*/
+/*}*/
 
 .header-title {
     text-align: center;
@@ -31,7 +31,7 @@
 .bars-icon {
     font-size: 2rem;
     color: #E5E8E8;
-    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .bars-btn:hover .bars-icon {
@@ -47,7 +47,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #34495E;
     box-shadow: 0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
     overflow-x: hidden;
@@ -76,7 +76,7 @@
     border: none;
     position: absolute;
     top: 0.9rem;
-    left: 0.5rem;
+    right: 0.5rem;
 }
 
 .close-btn:hover .x-icon {

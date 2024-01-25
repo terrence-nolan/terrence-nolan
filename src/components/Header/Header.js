@@ -10,7 +10,7 @@ const Header = ({ pageTitle }) => {
 
     const openNav = () => {
         if (sidebarRef.current) {
-            sidebarRef.current.style.width = "20rem";
+            sidebarRef.current.style.width = "100%";
             setIsSidebarOpen(true);
         }
     };
@@ -42,13 +42,7 @@ const Header = ({ pageTitle }) => {
 
     return (
         <header className="app-header">
-            <button
-                onClick={openNav}
-                className="bars-btn"
-                aria-label="menu"
-            >
-                <FontAwesomeIcon icon={faBars} className="bars-icon" />
-            </button>
+            <h1 className="header-title">{pageTitle}</h1>
             <div ref={sidebarRef} className="sidebar">
                 <div className="nav-list">
                     <button onClick={closeNav} className="close-btn" aria-label="close-menu">
@@ -60,8 +54,14 @@ const Header = ({ pageTitle }) => {
                     <Link to="/projects" onClick={closeNav} className="page-link">Projects</Link>
                 </div>
             </div>
-            <div className="flex-spacer" />
-            <h1 className="header-title">{pageTitle}</h1>
+            {/*<div className="flex-spacer" />*/}
+            <button
+                onClick={openNav}
+                className="bars-btn"
+                aria-label="menu"
+            >
+                <FontAwesomeIcon icon={faBars} className="bars-icon" />
+            </button>
         </header>
     );
 }
