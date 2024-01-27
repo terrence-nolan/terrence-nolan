@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './styles.css';
+import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -41,35 +41,34 @@ const Header = ({ pageTitle }) => {
     }, [isSidebarOpen]);
 
     return (
-        <header className="app-header">
-            <h1 className="header-title">{pageTitle}</h1>
-            <div ref={sidebarRef} className="sidebar">
-                <div className="nav-list">
+        <header className={styles.appHeader}>
+            <h1 className={styles.headerTitle}>{pageTitle}</h1>
+            <div ref={sidebarRef} className={styles.sidebar}>
+                <div className={styles.navList}>
                     <button
                         onClick={closeNav}
-                        className="close-btn"
+                        className={styles.closeBtn}
                         aria-label="close-menu"
                     >
                         <FontAwesomeIcon
                             icon={faXmark}
-                            className="x-icon"
+                            className={styles.xIcon}
                             size='2x'
                         />
                     </button>
-                    <Link to="/" onClick={closeNav} className="page-link">Home</Link>
-                    <Link to="/experience" onClick={closeNav} className="page-link">Experience</Link>
-                    <Link to="/projects" onClick={closeNav} className="page-link">Projects</Link>
+                    <Link to="/" onClick={closeNav} className={styles.pageLink}>Home</Link>
+                    <Link to="/experience" onClick={closeNav} className={styles.pageLink}>Experience</Link>
+                    <Link to="/projects" onClick={closeNav} className={styles.pageLink}>Projects</Link>
                 </div>
             </div>
-            {/*<div className="flex-spacer" />*/}
             <button
                 onClick={openNav}
-                className="bars-btn"
+                className={styles.barsBtn}
                 aria-label="menu"
             >
                 <FontAwesomeIcon
                     icon={faBars}
-                    className="bars-icon"
+                    className={styles.barsIcon}
                     size='2x'
                 />
             </button>

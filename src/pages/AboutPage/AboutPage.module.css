@@ -19,6 +19,7 @@
 
 .card {
     display: flex;
+    flex-direction: column;
     flex: 1;
     text-align: left;
     background-color: var(--white);

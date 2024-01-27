@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import Layout from './components/Layout/Layout';
@@ -17,4 +17,3 @@ const AppRoutes = () => {
 };
 
 export default AppRoutes;
-

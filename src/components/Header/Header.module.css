@@ -5,7 +5,7 @@ body {
     margin-top: 3rem;
 }
 
-.app-header {
+.appHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,11 +19,7 @@ body {
     background-color: var(--gray-background);
 }
 
-/*.flex-spacer {*/
-/*    flex: 1;*/
-/*}*/
-
-.header-title {
+.headerTitle {
     text-align: center;
     margin-right: 0.5rem;
     text-decoration: none;
@@ -31,17 +27,17 @@ body {
     font-weight: bold;
 }
 
-.bars-btn {
+.barsBtn {
     background: none;
     border: none;
 }
 
-.bars-icon {
+.barsIcon {
     color: var(--brick-red);
     transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.bars-btn:hover .bars-icon {
+.barsBtn:hover .barsIcon {
     /*transform: scale(1.1);*/
     /*color: white;*/
 }
@@ -64,7 +60,7 @@ body {
     white-space: nowrap;
 }
 
-.page-link {
+.pageLink {
     text-align: left;
     padding: 0 0 1rem 1rem;
     text-decoration: none;
@@ -79,7 +75,7 @@ body {
 /*    color: #55C1CD;*/
 /*}*/
 
-.close-btn {
+.closeBtn {
     background: none;
     border: none;
     position: absolute;
@@ -87,17 +83,17 @@ body {
     right: 0.5rem;
 }
 
-.close-btn:hover .x-icon {
+.closeBtn:hover .xIcon {
     /*transform: scale(1.1);*/
     color: var(--brick-red);
 }
 
-.x-icon {
+.xIcon {
     color: var(--brick-red);
     transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;;
 }
 
-.nav-list {
+.navList {
     display: flex;
     flex-direction: column;
     padding-top: 0.5rem;
