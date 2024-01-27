@@ -18,7 +18,7 @@
         right: 0;
         z-index: 1000;
         background-color: var(--gray-background);
-        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
     .headerTitle {
