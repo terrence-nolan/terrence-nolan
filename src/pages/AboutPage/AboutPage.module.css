@@ -1,34 +1,94 @@
 @import '../../utils/colors.css';
 
-.aboutMain {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #2E4053;
-    background-color: var(--gray-background);
-    padding: 1em 0;
-    overflow-x: hidden;
-    font-size: calc(10px + 2vmin);
-    min-height: 100vh;
+@media (max-width: 480px) {
+    .aboutMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #2E4053;
+        background-color: var(--gray-background);
+        padding: 1em 0;
+        overflow-x: hidden;
+        font-size: calc(10px + 2vmin);
+        min-height: 100vh;
+    }
 
-    @media only screen and (min-width: 1000px) {
-        padding: 1em 5em;
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: left;
+        background-color: var(--white);
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;
+        min-width: 20em;
+        color: #2E4053;
+        font-size: 0.85em;
     }
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    text-align: left;
-    background-color: var(--white);
-    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-    border-radius: 1em;
-    margin: 1em;
-    padding: 1em;
-    overflow: auto;
-    min-width: 20em;
-    color: #2E4053;
-    font-size: 0.85em;
+@media (min-width: 481px) and (max-width: 1084px) {
+    .aboutMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #2E4053;
+        background-color: var(--gray-background);
+        padding: 1em 0;
+        overflow-x: hidden;
+        font-size: calc(10px + 2vmin);
+        min-height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: left;
+        background-color: var(--white);
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;
+        min-width: 20em;
+        color: #2E4053;
+        font-size: 0.85em;
+    }
+}
+
+@media (min-width: 1085px) {
+    .aboutMain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #2E4053;
+        background-color: var(--gray-background);
+        padding: 1em 5em;
+        overflow-x: hidden;
+        font-size: calc(10px + 2vmin);
+        min-height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: left;
+        background-color: var(--white);
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;
+        min-width: 20em;
+        color: #2E4053;
+        font-size: 0.85em;
+    }
 }

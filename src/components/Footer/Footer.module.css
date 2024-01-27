@@ -5,4 +5,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

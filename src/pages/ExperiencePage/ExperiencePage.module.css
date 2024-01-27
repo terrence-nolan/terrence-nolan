@@ -6,7 +6,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /*background-color: #DED6CA;*/
         background-color: var(--gray-background);
         padding: 1em;
         overflow-x: hidden;
@@ -74,7 +73,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /*background-color: #DED6CA;*/
         background-color: var(--gray-background);
         padding: 1em;
         overflow-x: hidden;
@@ -141,7 +139,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*background-color: #DED6CA;*/
         background-color: var(--gray-background);
         padding: 1em 5em;
         overflow-x: hidden;
