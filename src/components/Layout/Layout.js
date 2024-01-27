@@ -7,7 +7,7 @@ const Layout = ({ children, pageTitle }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 50;
+            const isScrolled = window.scrollY > 5;
             setScrolled(isScrolled);
         };
 

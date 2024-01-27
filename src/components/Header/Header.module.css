@@ -28,7 +28,7 @@ body {
 
 .headerTitle {
     text-align: center;
-    margin-right: 0.5rem;
+    margin: 0;
     text-decoration: none;
     color: var(--brick-red);
     font-weight: bold;
