@@ -1,98 +1,218 @@
 @import '../../utils/colors.css';
 
-.expMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*background-color: #DED6CA;*/
-    background-color: var(--gray-background);
-    padding: 1em 0;
-    overflow-x: hidden;
-    font-size: calc(10px + 2vmin);
-    min-height: 100vh;
-
-    @media only screen and (min-width: 1000px) {
-        padding: 1em 5em;
+@media (max-width: 480px) {
+    .expMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*background-color: #DED6CA;*/
+        background-color: var(--gray-background);
+        padding: 1em;
+        overflow-x: hidden;
+        font-size: calc(10px + 2vmin);
+        min-height: 100vh;
     }
-}
 
-.cardsDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    text-align: left;
-    background-color: white;
-    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-    border-radius: 1em;
-    margin: 1em;
-    padding: 1em;
-    overflow: auto;
-    min-width: 20em;
-    color: #2E4053;
-    font-size: 0.85em;
-    animation: backgroundSlideIn 1s ease-out;
-}
-
-@keyframes backgroundSlideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.cardTop {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    @media only screen and (min-width: 768px) {
+    .cardsDiv {
+        display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
     }
 
-}
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: left;
+        background-color: white;
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 0.5em 0;
+        padding: 1em;
+        overflow: auto;
+        /*min-width: 20em;*/
+        width: 100%;
+        color: #2E4053;
+        font-size: 0.85em;
+    }
 
-.leftText {
-    @media only screen and (min-width: 768px) {
+    .cardTop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .leftText {
+    }
+
+    .rightText {
         text-align: left;
     }
-}
 
-.rightText {
-    text-align: left;
+    .list {
+        font-size: max(0.75em, 14px);
+        padding-left: 1.2em;
+    }
 
-    @media only screen and (min-width: 768px) {
-        text-align: right;
+    .image {
+        display: none;
+        /*box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);*/
+        /*border-radius: 1em;*/
+        /*margin: 1em;*/
+        /*align-self: center;*/
+        /*flex: 0 0 auto;*/
+        /*max-height: 16em;*/
+        /*min-width: 12em;*/
     }
 }
 
-.flexSpacer {
-    @media only screen and (min-width: 768px) {
+@media (min-width: 481px) and (max-width: 1084px) {
+    .expMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*background-color: #DED6CA;*/
+        background-color: var(--gray-background);
+        padding: 1em;
+        overflow-x: hidden;
+        font-size: calc(10px + 2vmin);
+        min-height: 100vh;
+    }
+
+    .cardsDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: left;
+        background-color: white;
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 0.5em 0;
+        padding: 1em;
+        overflow: auto;
+        min-width: 20em;
+        max-width: 100%;
+        color: #2E4053;
+        font-size: 0.85em;
+    }
+
+    .cardTop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .leftText {
+        text-align: left;
+    }
+
+    .rightText {
+        text-align: right;
+    }
+
+    .list {
+        font-size: max(0.75em, 14px);
+        padding-left: 1.2em;
+    }
+
+    .image {
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        align-self: center;
+        flex: 0 0 auto;
+        max-height: 16em;
+        min-width: 12em;
+    }
+}
+
+@media (min-width: 1085px) {
+    .expMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*background-color: #DED6CA;*/
+        background-color: var(--gray-background);
+        padding: 1em 5em;
+        overflow-x: hidden;
+        font-size: calc(10px + 2vmin);
+        min-height: 100vh;
+    }
+
+    .cardsDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: left;
+        background-color: white;
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;
+        min-width: 20em;
+        color: #2E4053;
+        font-size: 0.85em;
+        animation: backgroundSlideIn 1s ease-out;
+    }
+
+    @keyframes backgroundSlideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .cardTop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .leftText {
+        text-align: left;
+    }
+
+    .rightText {
+        text-align: right;
+    }
+
+    .flexSpacer {
         flex: 1;
         min-width: 2em;
     }
-}
 
-.list {
-    font-size: max(0.75em, 14px);
-    padding-left: 1.2em;
-}
+    .list {
+        font-size: max(0.75em, 14px);
+        padding-left: 1.2em;
+    }
 
-.image {
-    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
-    margin: 1rem;
-    align-self: center;
-    flex: 0 0 auto;
-    /* Don't grow, don't shrink, use content's intrinsic size */
-    max-height: 16em;
-    min-width: 12em;
+    .image {
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        align-self: center;
+        flex: 0 0 auto;
+        max-height: 16em;
+        min-width: 12em;
+    }
 }
