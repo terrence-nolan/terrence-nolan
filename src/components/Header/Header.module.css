@@ -17,6 +17,13 @@ body {
     right: 0;
     z-index: 1000;
     background-color: var(--gray-background);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled {
+    background-color: var(--brick-red);
+    color: var(--background-color);
+    box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 .headerTitle {
@@ -25,6 +32,7 @@ body {
     text-decoration: none;
     color: var(--brick-red);
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .barsBtn {
@@ -34,12 +42,17 @@ body {
 
 .barsIcon {
     color: var(--brick-red);
-    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;
+    /*transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;*/
+    transition: color 0.3s ease;
 }
 
 .barsBtn:hover .barsIcon {
     /*transform: scale(1.1);*/
     /*color: white;*/
+}
+
+.childrenScrolled {
+    color: var(--gray-background);
 }
 
 .sidebar {

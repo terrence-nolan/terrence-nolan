@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ pageTitle }) => {
+const Header = ({ pageTitle, scrolled }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const sidebarRef = useRef(null);
 
@@ -41,8 +41,8 @@ const Header = ({ pageTitle }) => {
     }, [isSidebarOpen]);
 
     return (
-        <header className={styles.appHeader}>
-            <h1 className={styles.headerTitle}>{pageTitle}</h1>
+        <header className={`${styles.appHeader} ${scrolled ? styles.scrolled : ''}`}>
+            <h1 className={`${styles.headerTitle} ${scrolled ? styles.childrenScrolled : ''}`}>{pageTitle}</h1>
             <div ref={sidebarRef} className={styles.sidebar}>
                 <div className={styles.navList}>
                     <button
@@ -68,7 +68,8 @@ const Header = ({ pageTitle }) => {
             >
                 <FontAwesomeIcon
                     icon={faBars}
-                    className={styles.barsIcon}
+                    className={`${styles.barsIcon} ${scrolled ? styles.childrenScrolled : ''}`}
+                    // className={styles.barsIcon}
                     size='2x'
                 />
             </button>
