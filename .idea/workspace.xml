@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2b81d14-db56-4538-afd2-0ee50fcd6d51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectsPage.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1706219342848" duration="8000" />
       <workItem from="1706219435129" duration="30000" />
       <workItem from="1706219481095" duration="3619000" />
-      <workItem from="1706324683404" duration="437000" />
+      <workItem from="1706324683404" duration="655000" />
     </task>
     <servers />
   </component>

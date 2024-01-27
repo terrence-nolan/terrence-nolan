@@ -57,7 +57,6 @@ const Header = ({ pageTitle }) => {
                         />
                     </button>
                     <Link to="/" onClick={closeNav} className="page-link">Home</Link>
-                    <Link to="/about" onClick={closeNav} className="page-link">About Me</Link>
                     <Link to="/experience" onClick={closeNav} className="page-link">Experience</Link>
                     <Link to="/projects" onClick={closeNav} className="page-link">Projects</Link>
                 </div>
