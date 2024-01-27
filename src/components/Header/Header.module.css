@@ -1,114 +1,211 @@
 @import '../../utils/colors.css';
 
-body {
-    background-color: var(--gray-background);
-    margin-top: 3rem;
+@media (max-width: 1084px) {
+    body {
+        background-color: var(--gray-background);
+        margin-top: 3rem;
+    }
+
+    .appHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: .5rem;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: var(--gray-background);
+        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .headerTitle {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        text-decoration: none;
+        color: var(--normal-blue);
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .barsBtn {
+        background: none;
+        border: none;
+    }
+
+    .barsIcon {
+        color: var(--normal-blue);
+        transition: color 0.3s ease;
+    }
+
+    .barsBtn:active .barsIcon {
+        color: var(--navy-blue);
+    }
+
+    .desktopNavbar {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        background-color: var(--gray-background);
+        box-shadow: -0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
+        overflow-x: hidden;
+        padding: 1rem 0 1rem 0;
+        transition: 0.5s;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    .pageLink {
+        text-align: left;
+        padding: 0 0 1rem 1rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--light-blue);
+        display: block;
+        transition: color 0.3s, transform 0.3s;
+        font-weight: bold;
+    }
+
+    .pageLink:active {
+        color: var(--navy-blue);
+    }
+
+    /*.page-link:active {*/
+    /*    color: #55C1CD;*/
+    /*}*/
+
+    .closeBtn {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 0.9rem;
+        right: 0.5rem;
+    }
+
+    .closeBtn:active .xIcon {
+        color: var(--navy-blue);
+    }
+
+    .xIcon {
+        color: var(--normal-blue);
+        transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;;
+    }
+
+    .navList {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        margin-top: 3.5rem;
+    }
+
+    .childrenScrolled {
+        color: var(--gray-background);
+    }
+
+    .scrolled {
+        background-color: var(--normal-blue);
+        color: var(--background-color);
+        box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
+    }
 }
 
-.appHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: .5rem;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: var(--gray-background);
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
+@media (min-width: 1085px) {
 
-.scrolled {
-    background-color: var(--brick-red);
-    color: var(--background-color);
-    box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
-}
+    body {
+        background-color: var(--gray-background);
+        margin-top: 3rem;
+    }
 
-.headerTitle {
-    text-align: center;
-    margin: 0;
-    text-decoration: none;
-    color: var(--brick-red);
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+    .appHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: .5rem 1rem;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: var(--gray-background);
+        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.barsBtn {
-    background: none;
-    border: none;
-}
+    .headerTitle {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        padding-left: 1.5rem;
+        text-decoration: none;
+        color: var(--normal-blue);
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
 
-.barsIcon {
-    color: var(--brick-red);
-    /*transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;*/
-    transition: color 0.3s ease;
-}
+    .headerTitle:hover {
+        color: var(--navy-blue);
+    }
 
-.barsBtn:hover .barsIcon {
-    /*transform: scale(1.1);*/
-    /*color: white;*/
-}
+    .desktopNavbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
-.childrenScrolled {
-    color: var(--gray-background);
-}
+    .barsBtn {
+        display: none;
+    }
 
-.sidebar {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    background-color: var(--gray-background);
-    box-shadow: -0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
-    overflow-x: hidden;
-    padding: 1rem 0 1rem 0;
-    transition: 0.5s;
-    flex-direction: column;
-    white-space: nowrap;
-}
+    .sidebar {
+        display: none;
+    }
 
-.pageLink {
-    text-align: left;
-    padding: 0 0 1rem 1rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: var(--brick-red);
-    display: block;
-    transition: color 0.3s, transform 0.3s;
-    font-weight: bold;
-}
+    .pageLink {
+        text-align: left;
+        /*padding: 0 1rem;*/
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--normal-blue);
+        display: block;
+        transition: color 0.3s, transform 0.3s;
+    }
 
-/*.page-link:hover {*/
-/*    color: #55C1CD;*/
-/*}*/
+    .pageLink:hover {
+        color: var(--navy-blue);
+        /*transition: font-weight 0.3s ease-in-out;*/
+    }
 
-.closeBtn {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 0.9rem;
-    right: 0.5rem;
-}
+    .pageLinkContainer {
+        padding: 0 1.5rem;
+    }
 
-.closeBtn:hover .xIcon {
-    /*transform: scale(1.1);*/
-    color: var(--brick-red);
-}
+    .closeBtn {
+        display: none;
+    }
 
-.xIcon {
-    color: var(--brick-red);
-    transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;;
-}
+    .navList {
+        display: none;
+    }
 
-.navList {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.5rem;
-    margin-top: 3.5rem;
+    .scrolled {
+        background-color: var(--normal-blue);
+        color: var(--background-color);
+        box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
+    }
+
+    .childrenScrolled {
+        color: var(--gray-background);
+    }
 }

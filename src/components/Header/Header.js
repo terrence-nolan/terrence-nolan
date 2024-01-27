@@ -8,20 +8,6 @@ const Header = ({ pageTitle, scrolled }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const sidebarRef = useRef(null);
 
-    const openNav = () => {
-        if (sidebarRef.current) {
-            sidebarRef.current.style.width = "100%";
-            setIsSidebarOpen(true);
-        }
-    };
-
-    const closeNav = () => {
-        if (sidebarRef.current) {
-            sidebarRef.current.style.width = "0";
-            setIsSidebarOpen(false);
-        }
-    };
-
     useEffect(() => {
         const closeOffClick = (event) => {
             if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -40,9 +26,52 @@ const Header = ({ pageTitle, scrolled }) => {
         };
     }, [isSidebarOpen]);
 
+    const openNav = () => {
+        if (sidebarRef.current) {
+            sidebarRef.current.style.width = "100%";
+            setIsSidebarOpen(true);
+        }
+    };
+
+    const closeNav = () => {
+        if (sidebarRef.current) {
+            sidebarRef.current.style.width = "0";
+            setIsSidebarOpen(false);
+        }
+    };
+
+    const DesktopNavbar = () => {
+        return (
+            <div className={styles.desktopNavbar}>
+                <div className={styles.pageLinkContainer}>
+                    <Link
+                        to="/experience"
+                        className={`${styles.pageLink} ${scrolled ? styles.childrenScrolled : ''}`}
+                    >
+                        Experience
+                    </Link>
+                </div>
+                <div className={styles.pageLinkContainer}>
+                    <Link
+                        to="/projects"
+                        className={`${styles.pageLink} ${scrolled ? styles.childrenScrolled : ''}`}
+                    >
+                        Projects
+                    </Link>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <header className={`${styles.appHeader} ${scrolled ? styles.scrolled : ''}`}>
-            <h1 className={`${styles.headerTitle} ${scrolled ? styles.childrenScrolled : ''}`}>{pageTitle}</h1>
+            <Link
+                to="/"
+                className={`${styles.headerTitle} ${scrolled ? styles.childrenScrolled : ''}`}
+            >
+                Terrence Nolan
+            </Link>
+            <DesktopNavbar />
             <div ref={sidebarRef} className={styles.sidebar}>
                 <div className={styles.navList}>
                     <button
@@ -69,7 +98,6 @@ const Header = ({ pageTitle, scrolled }) => {
                 <FontAwesomeIcon
                     icon={faBars}
                     className={`${styles.barsIcon} ${scrolled ? styles.childrenScrolled : ''}`}
-                    // className={styles.barsIcon}
                     size='2x'
                 />
             </button>
