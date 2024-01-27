@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2b81d14-db56-4538-afd2-0ee50fcd6d51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +85,23 @@
       <workItem from="1706219323004" duration="16000" />
       <workItem from="1706219342848" duration="8000" />
       <workItem from="1706219435129" duration="30000" />
-      <workItem from="1706219481095" duration="3361000" />
+      <workItem from="1706219481095" duration="3619000" />
+      <workItem from="1706324683404" duration="437000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.js</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

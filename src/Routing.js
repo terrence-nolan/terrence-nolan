@@ -9,8 +9,7 @@ import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<Layout pageTitle="Terrence Nolan"><HomePage /></Layout>} />
-            <Route path="/about" element={<Layout pageTitle="About Me"><AboutPage /></Layout>} />
+            <Route path="/" element={<Layout pageTitle="About Me"><AboutPage /></Layout>} />
             <Route path="/experience" element={<Layout pageTitle="Experience"><ExperiencePage /></Layout>} />
             <Route path="/projects" element={<Layout pageTitle="Projects"><ProjectsPage /></Layout>} />
         </Routes>

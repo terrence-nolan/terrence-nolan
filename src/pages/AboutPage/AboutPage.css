@@ -1,10 +1,12 @@
+@import '../../utils/colors.css';
+
 .aboutMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #2E4053;
-    background-color: #DED6CA;
+    background-color: var(--gray-background);
     padding: 1em 0;
     overflow-x: hidden;
     font-size: calc(10px + 2vmin);
@@ -19,7 +21,7 @@
     display: flex;
     flex: 1;
     text-align: left;
-    background-color: #FEF5E7;
+    background-color: var(--white);
     box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
     border-radius: 1em;
     margin: 1em;
