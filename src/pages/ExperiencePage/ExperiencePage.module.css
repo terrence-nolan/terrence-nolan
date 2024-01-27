@@ -167,10 +167,10 @@
         min-width: 20em;
         color: #2E4053;
         font-size: 0.85em;
-        animation: backgroundSlideIn 1s ease-out;
+        animation: cardSlideIn 1s ease-out;
     }
 
-    @keyframes backgroundSlideIn {
+    @keyframes cardSlideIn {
         from {
             transform: translateX(-100%);
         }
@@ -211,5 +211,15 @@
         flex: 0 0 auto;
         max-height: 16em;
         min-width: 12em;
+        animation: imageSlideIn 1s ease-out;
+}
+
+@keyframes imageSlideIn {
+    from {
+        transform: translateX(100%);
     }
+    to {
+        transform: translateX(0);
+    }
+}
 }
