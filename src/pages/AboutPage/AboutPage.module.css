@@ -29,6 +29,16 @@
         color: #2E4053;
         font-size: 0.85em;
     }
+
+    .image {
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        align-self: center;
+        flex: 0 0 auto;
+        max-height: 16em;
+        min-width: 12em;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 1084px) {
@@ -60,12 +70,22 @@
         color: #2E4053;
         font-size: 0.85em;
     }
+
+    .image {
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        align-self: center;
+        flex: 0 0 auto;
+        max-height: 16em;
+        min-width: 12em;
+    }
 }
 
 @media (min-width: 1085px) {
     .aboutMain {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         color: #2E4053;
@@ -74,6 +94,11 @@
         overflow-x: hidden;
         font-size: calc(10px + 2vmin);
         min-height: 100vh;
+    }
+
+    .introSection {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .card {
@@ -90,5 +115,50 @@
         min-width: 20em;
         color: #2E4053;
         font-size: 0.85em;
+    }
+
+    .image {
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+        margin: 1em;
+        align-self: center;
+        flex: 0 0 auto;
+        max-height: 16em;
+        /*min-width: 12em;*/
+    }
+
+    .connectLinksContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .connectLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
+        color: var(--normal-blue);
+        transition: color 0.3s ease;
+        background-color: var(--white);
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    .emailLink:hover {
+        color: var(--email);
+    }
+
+    .github:hover {
+        color: black;
+    }
+
+    .linkedin:hover {
+        color: var(--linkedin);
+    }
+
+    .phone:hover {
+        color: var(--phone);
     }
 }
