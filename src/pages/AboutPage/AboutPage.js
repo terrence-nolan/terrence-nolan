@@ -27,6 +27,8 @@ const AboutPage = () => {
                     <h4><em>Greater Boston, MA</em></h4>
                     <h4>Computer Science @ Villanova University</h4>
                     <h4>Exp. Graduation: May 2024</h4>
+                    <p>I am a senior CS student looking for a full time SWE role, particularly a frontend position.
+                        Feel free to check out my website and contact me at any of the links below.</p>
                 </div>
             </div>
             <div className={styles.mainCardsContainer}>
