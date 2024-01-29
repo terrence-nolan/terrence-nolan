@@ -65,45 +65,6 @@
         display: flex;
         justify-content: center;
     }
-
-    .connectLinksContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-        margin: 2rem 0 3rem;
-        width: 100%;
-    }
-
-    .connectLinks {
-        display: flex;
-        /*align-items: center;*/
-        justify-content: center;
-        align-content: center;
-        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--normal-blue);
-        transition: color 0.3s ease;
-        background-color: var(--white);
-        border-radius: 1rem;
-        padding: 1rem;
-        /*margin: 0 0.5rem;*/
-    }
-
-    .emailLink:hover {
-        color: var(--email);
-    }
-
-    .github:hover {
-        color: black;
-    }
-
-    .linkedin:hover {
-        color: var(--linkedin);
-    }
-
-    .phone:hover {
-        color: var(--phone);
-    }
 }
 
 @media (min-width: 481px) and (max-width: 1084px) {
@@ -176,44 +137,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-    }
-
-    .connectLinksContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 3rem 0 0;
-    }
-
-    .connectLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--normal-blue);
-        transition: color 0.3s ease;
-        background-color: var(--white);
-        border-radius: 1rem;
-        padding: 1rem;
-        margin: 0 1rem;
-    }
-
-    .emailLink:hover {
-        color: var(--email);
-    }
-
-    .github:hover {
-        color: black;
-    }
-
-    .linkedin:hover {
-        color: var(--linkedin);
-    }
-
-    .phone:hover {
-        color: var(--phone);
     }
 }
 
@@ -297,54 +220,6 @@
         display: flex;
         justify-content: center;
         /*animation: cardSlideIn 1s ease-out;*/
-    }
-
-    .connectLinksContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 3rem 0 0;
-        animation: connectSlideIn 1s ease-out;
-    }
-
-    @keyframes connectSlideIn {
-        from {
-            transform: translateY(200%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-
-    .connectLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--normal-blue);
-        transition: color 0.3s ease;
-        background-color: var(--white);
-        border-radius: 1rem;
-        padding: 1rem;
-        margin: 0 1rem;
-    }
-
-    .emailLink:hover {
-        color: var(--email);
-    }
-
-    .github:hover {
-        color: black;
-    }
-
-    .linkedin:hover {
-        color: var(--linkedin);
-    }
-
-    .phone:hover {
-        color: var(--phone);
     }
 
     @keyframes cardSlideIn {

@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import styles from './ExperiencePage.module.css';
 import images from '../../images/images';
+import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
 
 const ExperiencePage = () => {
     useEffect(() => {
@@ -71,6 +72,7 @@ const ExperiencePage = () => {
                     <li>Built interactive dashboards using select network vulnerability data on Tableau with importance to cybersecurity team</li>
                 </ul>
             </div>
+            <ConnectionLinks />
         </main>
     );
 }
