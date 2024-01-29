@@ -2,7 +2,7 @@
 
 .projectsMain {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #2E4053;
