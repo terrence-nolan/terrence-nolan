@@ -21,7 +21,7 @@ const AboutPage = () => {
                 <div className={styles.card}>
                     <h2><strong>Terrence Nolan</strong></h2>
                     <h4><em>Greater Boston, MA</em></h4>
-                    <h4>Villanova University</h4>
+                    <h4>Computer Science @ Villanova University</h4>
                     <h4>Exp. Graduation: May 2024</h4>
                 </div>
             </div>
