@@ -258,6 +258,7 @@
         color: #2E4053;
         width: 100%;
         font-size: 0.85rem;
+        animation: cardSlideIn 1s ease-out;
     }
 
     .image {
@@ -268,6 +269,16 @@
         flex: 0 0 auto;
         max-height: 16rem;
         /*min-width: 12em;*/
+        animation: imageSlideIn 1s ease-out;
+    }
+
+    @keyframes imageSlideIn {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 
     .skillsAndTech {
@@ -276,12 +287,14 @@
         align-items: stretch;
         justify-content: center;
         width: 100%;
+        /*animation: cardSlideIn 1s ease-out;*/
     }
 
     .soloCardContainer {
         width: 100%;
         display: flex;
         justify-content: center;
+        /*animation: cardSlideIn 1s ease-out;*/
     }
 
     .connectLinksContainer {
@@ -319,5 +332,14 @@
 
     .phone:hover {
         color: var(--phone);
+    }
+
+    @keyframes cardSlideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 }
