@@ -4,7 +4,13 @@ import images from '../../images/images';
 
 const ExperiencePage = () => {
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+
+        document.title = "Terrence Nolan | Experience";
+
+        return () => {
+            document.title = "Terrence Nolan";
+        };
     }, [])
 
     return (

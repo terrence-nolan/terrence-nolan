@@ -5,13 +5,17 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import { useMediaQuery } from 'react-responsive';
 
 const AboutPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 480 });
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+
+        document.title = "Terrence Nolan | About";
+
+        return () => {
+            document.title = "Terrence Nolan";
+        };
     }, [])
 
     return (

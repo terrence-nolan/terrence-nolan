@@ -3,7 +3,13 @@ import styles from './ProjectsPage.module.css';
 
 const ProjectsPage = () => {
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+
+        document.title = "Terrence Nolan | Projects";
+
+        return () => {
+            document.title = "Terrence Nolan";
+        };
     }, [])
 
     return (
