@@ -17,9 +17,9 @@ const ExperiencePage = () => {
                         <h2 className={styles.rightText}><b>Boston, MA</b></h2>
                     </div>
                     <div className={styles.cardTop}>
-                        <h4 className={styles.leftText}><i>Software Engineering Intern</i></h4>
+                        <h5 className={styles.leftText}><i>Software Engineering Intern</i></h5>
                         <div className={styles.flexSpacer} />
-                        <h4 className={styles.rightText}><i>Summer 2023</i></h4>
+                        <h5 className={styles.rightText}><i>Summer 2023</i></h5>
                     </div>
                     <ul className={styles.list}>
                         <li>Extracted the My Pet Health page UI from microsite framework and implemented it into a SPA which resulted in performance increase of 160% in Google Lighthouse</li>
@@ -39,9 +39,9 @@ const ExperiencePage = () => {
                     <h2 className={styles.rightText}><b>Rome, Italy</b></h2>
                 </div>
                 <div className={styles.cardTop}>
-                    <h4 className={styles.leftText}><i>Software Development Intern</i></h4>
+                    <h5 className={styles.leftText}><i>Software Development Intern</i></h5>
                     <div className={styles.flexSpacer} />
-                    <h4 className={styles.rightText}><i>Spring 2023</i></h4>
+                    <h5 className={styles.rightText}><i>Spring 2023</i></h5>
                 </div>
                 <ul className={styles.list}>
                     <li>Redesigned the appearance of the Institute of Augustine Spirituality website and transferred it from Joomla to Wix</li>
@@ -55,9 +55,9 @@ const ExperiencePage = () => {
                     <h2 className={styles.rightText}><b>Boston, MA</b></h2>
                 </div>
                 <div className={styles.cardTop}>
-                    <h4 className={styles.leftText}><i>Technical Assistant Intern</i></h4>
+                    <h5 className={styles.leftText}><i>Technical Assistant Intern</i></h5>
                     <div className={styles.flexSpacer} />
-                    <h4 className={styles.rightText}><i>Summer 2023</i></h4>
+                    <h5 className={styles.rightText}><i>Summer 2023</i></h5>
                 </div>
                 <ul className={styles.list}>
                     <li>Constructed a SnapLogic pipeline to transfer 100% of non-empty tables in the company's Oracle Databases into Snowflake Cloud Databases</li>

@@ -65,6 +65,11 @@
         /*max-height: 16em;*/
         /*min-width: 12em;*/
     }
+
+    .flexSpacer {
+        flex: 1;
+        min-width: 2em;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 1084px) {
@@ -132,6 +137,11 @@
         max-height: 16em;
         min-width: 12em;
     }
+
+    .flexSpacer {
+        flex: 1;
+        min-width: 2em;
+    }
 }
 
 @media (min-width: 1085px) {
@@ -149,8 +159,9 @@
     .cardsDiv {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap-reverse;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: flex-end;
     }
 
     .card {
@@ -164,7 +175,7 @@
         margin: 1em;
         padding: 1em;
         overflow: auto;
-        min-width: 20em;
+        /*width: 100%;*/
         color: #2E4053;
         font-size: 0.85em;
         animation: cardSlideIn 1s ease-out;
@@ -194,8 +205,10 @@
     }
 
     .flexSpacer {
-        flex: 1;
-        min-width: 2em;
+        @media (min-width: 768px) {
+            flex: 1;
+            min-width: 2em;
+        }
     }
 
     .list {
@@ -212,14 +225,14 @@
         max-height: 16em;
         min-width: 12em;
         animation: imageSlideIn 1s ease-out;
-}
+    }
 
-@keyframes imageSlideIn {
-    from {
-        transform: translateX(100%);
+    @keyframes imageSlideIn {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
-    to {
-        transform: translateX(0);
-    }
-}
 }
