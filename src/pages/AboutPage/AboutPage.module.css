@@ -69,8 +69,9 @@
     .connectLinksContainer {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin: 1rem 0;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0 3rem;
         width: 100%;
     }
 
@@ -180,8 +181,9 @@
     .connectLinksContainer {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        margin: 1rem 0;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 3rem 0 0;
     }
 
     .connectLinks {
@@ -300,8 +302,19 @@
     .connectLinksContainer {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
+        gap: 0.5rem;
         margin: 3rem 0 0;
+        animation: connectSlideIn 1s ease-out;
+    }
+
+    @keyframes connectSlideIn {
+        from {
+            transform: translateY(200%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 
     .connectLinks {
