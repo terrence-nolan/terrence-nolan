@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-const Layout = ({ children, pageTitle }) => {
+const Layout = ({ children }) => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -20,7 +20,7 @@ const Layout = ({ children, pageTitle }) => {
 
     return (
         <div>
-            <Header pageTitle={pageTitle} scrolled={scrolled} />
+            <Header scrolled={scrolled} />
             <main>{children}</main>
             <Footer />
         </div>
