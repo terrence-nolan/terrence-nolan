@@ -37,7 +37,7 @@ const AboutPage = () => {
                             Java<br/>
                             Python<br/>
                             Typescript<br/>
-                            SQL
+                            SQL<br />
                         </p>
                     </div>
                     <div className={styles.card}>
@@ -47,6 +47,7 @@ const AboutPage = () => {
                             React Native<br/>
                             Expo Go<br/>
                             Jest<br/>
+                            Firebase<br/>
                             Jupyter Notebook<br/>
                             Figma<br/>
                         </p>
@@ -55,10 +56,9 @@ const AboutPage = () => {
                 <div className={styles.soloCardContainer}>
                     <div className={styles.card}>
                         <p>In my final semester of college, I am enrolled in an Applied Machine Learning course as well
-                            as continuing to work on my Senior Capstone project – <a href={"https://punchcard.work/"}>Punchcard</a>.
+                            as continuing to work on my Senior Capstone project – <a href={"https://punchcard.work/"} className={styles.link}>Punchcard</a>.
                             <br /><br />
-                            Outside of the classroom, I enjoy drawing, being active, and teaching myself how to play the guitar.
-                            Some of my more active hobbies include playing soccer, rock climbing, and running.
+                            In addition to programming, I enjoy running, playing the guitar, and drawing.
                         </p>
                     </div>
                 </div>

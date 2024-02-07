@@ -44,6 +44,15 @@
         /*font-size: 0.85rem;*/
     }
 
+    .link {
+        text-decoration: none;
+        color: var(--normal-blue);
+    }
+
+    .link:hover {
+        color: var(--navy-blue);
+    }
+
     .image {
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         border-radius: 1rem;
@@ -115,6 +124,15 @@
         font-size: 0.85rem;
     }
 
+    .link {
+        text-decoration: none;
+        color: var(--normal-blue);
+    }
+
+    .link:hover {
+        color: var(--navy-blue);
+    }
+
     .image {
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         border-radius: 1rem;
@@ -184,6 +202,15 @@
         width: 100%;
         font-size: 0.85rem;
         animation: cardSlideIn 1s ease-out;
+    }
+
+    .link {
+        text-decoration: none;
+        color: var(--normal-blue);
+    }
+
+    .link:hover {
+        color: var(--navy-blue);
     }
 
     .image {
