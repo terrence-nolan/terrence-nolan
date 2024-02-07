@@ -3,6 +3,7 @@ import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import ResumePDF from './../../utils/terrence-nolan-resume.pdf';
 
 const Header = ({ scrolled }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -59,6 +60,15 @@ const Header = ({ scrolled }) => {
                         Projects
                     </Link>
                 </div>
+                <div className={styles.pageLinkContainer}>
+                    <Link
+                        to={ResumePDF}
+                        target="_blank"
+                        className={`${styles.pageLink} ${scrolled ? styles.childrenScrolled : ''}`}
+                    >
+                        Resume
+                    </Link>
+                </div>
             </div>
         )
     }
@@ -88,6 +98,14 @@ const Header = ({ scrolled }) => {
                     <Link to="/" onClick={closeNav} className={styles.pageLink}>About</Link>
                     <Link to="/experience" onClick={closeNav} className={styles.pageLink}>Experience</Link>
                     <Link to="/projects" onClick={closeNav} className={styles.pageLink}>Projects</Link>
+                    <Link
+                        to={ResumePDF}
+                        target="_blank"
+                        onClick={closeNav}
+                        className={styles.pageLink}
+                    >
+                        Resume
+                    </Link>
                 </div>
             </div>
             <button

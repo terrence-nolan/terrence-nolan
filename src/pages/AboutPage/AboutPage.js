@@ -54,7 +54,10 @@ const AboutPage = () => {
                 </div>
                 <div className={styles.soloCardContainer}>
                     <div className={styles.card}>
-                        <p>Outside of the classroom, I enjoy drawing, being active, and teaching myself how to play the guitar.
+                        <p>In my final semester of college, I am enrolled in an Applied Machine Learning course as well
+                            as continuing to work on my Senior Capstone project – <a href={"https://punchcard.work/"}>Punchcard</a>.
+                            <br /><br />
+                            Outside of the classroom, I enjoy drawing, being active, and teaching myself how to play the guitar.
                             Some of my more active hobbies include playing soccer, rock climbing, and running.
                         </p>
                     </div>
