@@ -17,6 +17,7 @@ const ConnectionLinks = () => {
             </Link>
             <Link
                 to={'https://github.com/terrence-nolan'}
+                target="_blank"
             >
                 <div className={`${styles.github} ${styles.connectLinks}`}>
                     <FontAwesomeIcon icon={faGithub} size={'1x'} />
@@ -24,6 +25,7 @@ const ConnectionLinks = () => {
             </Link>
             <Link
                 to={'https://www.linkedin.com/in/terrencenolan/'}
+                target="_blank"
             >
                 <div className={`${styles.linkedin} ${styles.connectLinks}`}>
                     <FontAwesomeIcon icon={faLinkedin} size={'1x'} />
