@@ -88,16 +88,6 @@
         justify-content: center;
         gap: 0.5rem;
         margin: 3rem 0 0;
-        animation: connectSlideIn 1s ease-out;
-    }
-
-    @keyframes connectSlideIn {
-        from {
-            transform: translateY(200%);
-        }
-        to {
-            transform: translateX(0);
-        }
     }
 
     .connectLinks {
