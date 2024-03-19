@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2b81d14-db56-4538-afd2-0ee50fcd6d51" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConnectionLinks/ConnectionLinks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConnectionLinks/ConnectionLinks.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/terrence-nolan-resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/terrence-nolan-resume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1707336763328" duration="2123000" />
       <workItem from="1707932467405" duration="793000" />
       <workItem from="1708975221268" duration="739000" />
-      <workItem from="1710702626388" duration="212000" />
+      <workItem from="1710702626388" duration="1984000" />
     </task>
     <servers />
   </component>

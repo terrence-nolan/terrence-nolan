@@ -200,12 +200,12 @@
     }
 
     .scrolled {
-        background-color: var(--normal-blue);
-        color: var(--background-color);
+        /*background-color: var(--normal-blue);*/
+        /*color: var(--background-color);*/
         box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
     }
 
-    .childrenScrolled {
-        color: var(--gray-background);
-    }
+    /*.childrenScrolled {*/
+    /*    color: var(--gray-background);*/
+    /*}*/
 }
