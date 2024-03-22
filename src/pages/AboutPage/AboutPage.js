@@ -21,9 +21,9 @@ const AboutPage = () => {
                 <img src={images.tjPortrait} alt="Terrence Nolan Portrait" className={styles.image} />
                 <div className={styles.card}>
                     <h2><strong>Terrence Nolan</strong></h2>
-                    <h5><em>Greater Boston, MA</em></h5>
-                    <h5>Computer Science @ Villanova University</h5>
-                    <h5>Expected Graduation: May 2024</h5>
+                    <h5>📍<em> Greater Boston, MA</em></h5>
+                    <h5>📚 Computer Science @ Villanova University</h5>
+                    <h5>🎓 Expected Graduation: May 2024</h5>
                     <h6>Elective Coursework: Applied Machine Learning, Computer Graphics, Overview of Cybersecurity</h6>
                     <p>I am a senior CS student looking for a full time SWE role, particularly a frontend position.
                         Please feel free to check out my website and contact me through any of the links below.</p>
