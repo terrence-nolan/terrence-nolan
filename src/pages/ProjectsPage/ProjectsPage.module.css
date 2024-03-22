@@ -1,12 +1,12 @@
-@import '../../utils/colors.css';
+@import '../../index.css';
 
 .projectsMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #2E4053;
-    background-color: var(--gray-background);
+    color: var(--primary-text);
+    background-color: var(--background-color);
     padding: 1em 0;
     overflow-x: hidden;
     font-size: calc(10px + 2vmin);

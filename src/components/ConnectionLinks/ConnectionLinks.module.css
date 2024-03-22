@@ -1,4 +1,4 @@
-@import '../../utils/colors.css';
+@import '../../index.css';
 
 @media (max-width: 480px) {
     .connectLinksContainer {
@@ -16,9 +16,9 @@
         justify-content: center;
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         transition: color 0.3s ease;
-        background-color: var(--white);
+        background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
         /*margin: 0 0.5rem;*/
@@ -29,16 +29,16 @@
     }
 
     .github:hover {
-        color: black;
+        color: var(--github);
     }
 
     .linkedin:hover {
         color: var(--linkedin);
     }
 
-    .phone:hover {
-        color: var(--phone);
-    }
+    /*.phone:hover {*/
+    /*    color: var(--phone);*/
+    /*}*/
 }
 
 @media (min-width: 481px) and (max-width: 1084px) {
@@ -56,9 +56,9 @@
         justify-content: center;
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         transition: color 0.3s ease;
-        background-color: var(--white);
+        background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
         margin: 0 1rem;
@@ -69,16 +69,16 @@
     }
 
     .github:hover {
-        color: black;
+        color: var(--github);
     }
 
     .linkedin:hover {
         color: var(--linkedin);
     }
 
-    .phone:hover {
-        color: var(--phone);
-    }
+    /*.phone:hover {*/
+    /*    color: var(--phone);*/
+    /*}*/
 }
 
 @media (min-width: 1085px) {
@@ -96,9 +96,9 @@
         justify-content: center;
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         transition: color 0.3s ease;
-        background-color: var(--white);
+        background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
         margin: 0 1rem;
@@ -109,14 +109,14 @@
     }
 
     .github:hover {
-        color: black;
+        color: var(--github);
     }
 
     .linkedin:hover {
         color: var(--linkedin);
     }
 
-    .phone:hover {
-        color: var(--phone);
-    }
+    /*.phone:hover {*/
+    /*    color: var(--phone);*/
+    /*}*/
 }

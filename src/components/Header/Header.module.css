@@ -1,15 +1,15 @@
-@import '../../utils/colors.css';
+@import '../../index.css';
 
 @media (max-width: 480px) {
     body {
-        background-color: var(--gray-background);
+        background-color: var(--background-color);
         margin-top: 1.5rem;
     }
 }
 
 @media (max-width: 1084px) {
     body {
-        background-color: var(--gray-background);
+        background-color: var(--background-color);
         margin-top: 3rem;
     }
 
@@ -24,7 +24,7 @@
         left: 0;
         right: 0;
         z-index: 1000;
-        background-color: var(--gray-background);
+        background-color: var(--background-color);
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
@@ -33,7 +33,7 @@
         text-align: center;
         margin: 0;
         text-decoration: none;
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         font-weight: bold;
         transition: color 0.3s ease;
     }
@@ -44,12 +44,12 @@
     }
 
     .barsIcon {
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         transition: color 0.3s ease;
     }
 
     .barsBtn:active .barsIcon {
-        color: var(--navy-blue);
+        color: var(--text-hover);
     }
 
     .desktopNavbar {
@@ -65,7 +65,7 @@
         z-index: 1000;
         top: 0;
         right: 0;
-        background-color: var(--gray-background);
+        background-color: var(--background-color);
         box-shadow: -0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
         overflow-x: hidden;
         padding: 1rem 0 1rem 0;
@@ -79,14 +79,14 @@
         padding: 0 0 1rem 1rem;
         text-decoration: none;
         font-size: 1.2rem;
-        color: var(--light-blue);
+        color: var(--mobile-link);
         display: block;
         transition: color 0.3s, transform 0.3s;
         font-weight: bold;
     }
 
     .pageLink:active {
-        color: var(--navy-blue);
+        color: var(--text-hover);
     }
 
     /*.page-link:active {*/
@@ -102,11 +102,11 @@
     }
 
     .closeBtn:active .xIcon {
-        color: var(--navy-blue);
+        color: var(--text-hover);
     }
 
     .xIcon {
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;;
     }
 
@@ -124,14 +124,14 @@
     }
 
     /*.childrenScrolled {*/
-    /*    color: var(--gray-background);*/
+    /*    color: var(--background-color);*/
     /*}*/
 }
 
 @media (min-width: 1085px) {
 
     body {
-        background-color: var(--gray-background);
+        background-color: var(--background-color);
         margin-top: 3rem;
     }
 
@@ -146,7 +146,7 @@
         left: 0;
         right: 0;
         z-index: 1000;
-        background-color: var(--gray-background);
+        background-color: var(--background-color);
         transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -156,13 +156,13 @@
         margin: 0;
         padding-left: 1.5rem;
         text-decoration: none;
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         font-weight: bold;
         transition: color 0.3s ease;
     }
 
     .headerTitle:hover {
-        color: var(--navy-blue);
+        color: var(--text-hover);
     }
 
     .desktopNavbar {
@@ -184,13 +184,13 @@
         /*padding: 0 1rem;*/
         text-decoration: none;
         font-size: 1.2rem;
-        color: var(--normal-blue);
+        color: var(--desktop-link);
         display: block;
         transition: color 0.3s, transform 0.3s;
     }
 
     .pageLink:hover {
-        color: var(--navy-blue);
+        color: var(--text-hover);
         /*transition: font-weight 0.3s ease-in-out;*/
     }
 
@@ -213,6 +213,6 @@
     }
 
     /*.childrenScrolled {*/
-    /*    color: var(--gray-background);*/
+    /*    color: var(--background-color);*/
     /*}*/
 }

@@ -1,4 +1,4 @@
-@import '../../utils/colors.css';
+@import '../../index.css';
 
 @media (max-width: 480px) {
     .aboutMain {
@@ -6,8 +6,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #2E4053;
-        background-color: var(--gray-background);
+        color: var(--primary-text);
+        background-color: var(--background-color);
         padding: 1rem 1rem 0;
         overflow-x: hidden;
         font-size: calc(10px + 2vmin);
@@ -33,24 +33,24 @@
         flex-direction: column;
         flex: 1;
         text-align: left;
-        background-color: var(--white);
+        background-color: var(--foreground-color);
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         border-radius: 1rem;
         margin: 0.5rem 0;
         padding: 1rem;
         overflow: auto;
         width: 100%;
-        color: #2E4053;
+        color: var(--primary-text);
         /*font-size: 0.85rem;*/
     }
 
     .link {
         text-decoration: none;
-        color: var(--normal-blue);
+        color: var(--desktop-link);
     }
 
     .link:hover {
-        color: var(--navy-blue);
+        color: var(--text-hover);
     }
 
     .image {
@@ -82,8 +82,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #2E4053;
-        background-color: var(--gray-background);
+        color: var(--primary-text);
+        background-color: var(--background-color);
         padding: 1rem 2rem;
         overflow-x: hidden;
         font-size: calc(10px + 2vmin);
@@ -114,23 +114,23 @@
         flex-direction: column;
         flex: 1;
         text-align: left;
-        background-color: var(--white);
+        background-color: var(--foreground-color);
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         border-radius: 1rem;
         margin: 0.5rem;
         padding: 1rem;
         overflow: auto;
-        color: #2E4053;
+        color: var(--primary-text);
         font-size: 0.85rem;
     }
 
     .link {
         text-decoration: none;
-        color: var(--normal-blue);
+        color: var(--desktop-link);
     }
 
     .link:hover {
-        color: var(--navy-blue);
+        color: var(--text-hover);
     }
 
     .image {
@@ -164,8 +164,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #2E4053;
-        background-color: var(--gray-background);
+        color: var(--primary-text);
+        background-color: var(--background-color);
         padding: 1rem 5rem 2rem;
         overflow-x: hidden;
         font-size: calc(10px + 2vmin);
@@ -192,13 +192,13 @@
         flex-direction: column;
         flex: 1;
         text-align: left;
-        background-color: var(--white);
+        background-color: var(--foreground-color);
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         border-radius: 1rem;
         margin: 0.5rem;
         padding: 1rem;
         overflow: auto;
-        color: #2E4053;
+        color: var(--primary-text);
         width: 100%;
         font-size: 0.85rem;
         animation: cardSlideIn 1s ease-out;
@@ -206,11 +206,11 @@
 
     .link {
         text-decoration: none;
-        color: var(--normal-blue);
+        color: var(--desktop-link);
     }
 
     .link:hover {
-        color: var(--navy-blue);
+        color: var(--text-hover);
     }
 
     .image {
