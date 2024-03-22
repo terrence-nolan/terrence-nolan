@@ -178,7 +178,7 @@
         /*width: 100%;*/
         color: #2E4053;
         font-size: 0.85em;
-        animation: cardSlideIn 1s ease-out;
+        /*animation: cardSlideIn 1s ease-out;*/
     }
 
     @keyframes cardSlideIn {
@@ -225,7 +225,7 @@
         flex: 0 0 auto;
         max-height: 16em;
         min-width: 12em;
-        animation: imageSlideIn 1s ease-out;
+        /*animation: imageSlideIn 1s ease-out;*/
     }
 
     @keyframes imageSlideIn {

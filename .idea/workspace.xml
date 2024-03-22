@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2b81d14-db56-4538-afd2-0ee50fcd6d51" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperiencePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperiencePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperiencePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperiencePage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1707932467405" duration="793000" />
       <workItem from="1708975221268" duration="739000" />
       <workItem from="1710702626388" duration="4178000" />
-      <workItem from="1711087517486" duration="758000" />
+      <workItem from="1711087517486" duration="838000" />
     </task>
     <servers />
   </component>
