@@ -1,5 +1,12 @@
 @import '../../utils/colors.css';
 
+@media (max-width: 480px) {
+    body {
+        background-color: var(--gray-background);
+        margin-top: 1.5rem;
+    }
+}
+
 @media (max-width: 1084px) {
     body {
         background-color: var(--gray-background);
@@ -110,15 +117,15 @@
         margin-top: 3.5rem;
     }
 
-    .childrenScrolled {
-        color: var(--gray-background);
-    }
-
     .scrolled {
-        background-color: var(--normal-blue);
-        color: var(--background-color);
+        /*background-color: var(--normal-blue);*/
+        /*color: var(--background-color);*/
         box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
     }
+
+    /*.childrenScrolled {*/
+    /*    color: var(--gray-background);*/
+    /*}*/
 }
 
 @media (min-width: 1085px) {
