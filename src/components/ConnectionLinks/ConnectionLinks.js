@@ -2,7 +2,7 @@ import React from "react";
 import styles from './ConnectionLinks.module.css';
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 const ConnectionLinks = () => {
@@ -31,13 +31,13 @@ const ConnectionLinks = () => {
                     <FontAwesomeIcon icon={faLinkedin} size={'1x'} />
                 </div>
             </Link>
-            <Link
-                to={'tel:+16179092358'}
-            >
-                <div  className={`${styles.phone} ${styles.connectLinks}`}>
-                    <FontAwesomeIcon icon={faPhone} size={'1x'} />
-                </div>
-            </Link>
+            {/*<Link*/}
+            {/*    to={'tel:+16179092358'}*/}
+            {/*>*/}
+            {/*    <div  className={`${styles.phone} ${styles.connectLinks}`}>*/}
+            {/*        <FontAwesomeIcon icon={faPhone} size={'1x'} />*/}
+            {/*    </div>*/}
+            {/*</Link>*/}
         </div>
     )
 }
