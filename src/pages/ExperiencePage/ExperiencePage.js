@@ -19,7 +19,7 @@ const ExperiencePage = () => {
             <div className={styles.cardsDiv}>
                 <div className={styles.card}>
                     <div className={styles.cardTop}>
-                        <h2 className={styles.leftText}><b>Chewy</b></h2>
+                        <h2 className={styles.leftText}><b>Chewy, Inc.</b></h2>
                         <div className={styles.flexSpacer} />
                         <h2 className={styles.rightText}><b>Boston, MA</b></h2>
                     </div>
