@@ -8,7 +8,7 @@ const AboutPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
 
-        document.title = "Terrence Nolan | About";
+        document.title = "Terrence Nolan | Home";
 
         return () => {
             document.title = "Terrence Nolan";

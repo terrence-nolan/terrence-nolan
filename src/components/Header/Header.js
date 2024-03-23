@@ -46,6 +46,14 @@ const Header = ({ scrolled }) => {
             <div className={styles.desktopNavbar}>
                 <div className={styles.pageLinkContainer}>
                     <Link
+                        to="/"
+                        className={`${styles.pageLink} ${scrolled ? styles.childrenScrolled : ''}`}
+                    >
+                        Home
+                    </Link>
+                </div>
+                <div className={styles.pageLinkContainer}>
+                    <Link
                         to="/experience"
                         className={`${styles.pageLink} ${scrolled ? styles.childrenScrolled : ''}`}
                     >
@@ -95,7 +103,7 @@ const Header = ({ scrolled }) => {
                             size='2x'
                         />
                     </button>
-                    <Link to="/" onClick={closeNav} className={styles.pageLink}>About</Link>
+                    <Link to="/" onClick={closeNav} className={styles.pageLink}>Home</Link>
                     <Link to="/experience" onClick={closeNav} className={styles.pageLink}>Experience</Link>
                     <Link to="/projects" onClick={closeNav} className={styles.pageLink}>Projects</Link>
                     <Link
