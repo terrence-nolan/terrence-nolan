@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import ResumePDF from './../../utils/terrence-nolan-resume.pdf';
-import {Toggle} from "../Toggle/Toggle";
 
 const Header = ({ scrolled, toggleTheme, theme }) => {
     const DesktopNavbar = () => {
@@ -46,11 +45,6 @@ const Header = ({ scrolled, toggleTheme, theme }) => {
                 <button onClick={toggleTheme} className={styles.themeButton}>
                     Toggle Theme
                 </button>
-                {/*<Toggle*/}
-                {/*    isChecked={theme === "dark"}*/}
-                {/*    handleChange={() => toggleTheme()}*/}
-                {/*    theme={theme}*/}
-                {/*/>*/}
             </div>
         )
     }

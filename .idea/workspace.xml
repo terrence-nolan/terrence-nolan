@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2b81d14-db56-4538-afd2-0ee50fcd6d51" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConnectionLinks/ConnectionLinks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConnectionLinks/ConnectionLinks.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Toggle/Toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Toggle/Toggle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/AboutPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperiencePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperiencePage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectsPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectsPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Toggle/Toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Toggle/Toggle.module.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +89,7 @@
       <workItem from="1708975221268" duration="739000" />
       <workItem from="1710702626388" duration="4178000" />
       <workItem from="1711087517486" duration="12584000" />
-      <workItem from="1711394860941" duration="3365000" />
+      <workItem from="1711394860941" duration="3586000" />
     </task>
     <servers />
   </component>
