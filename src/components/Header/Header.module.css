@@ -4,6 +4,10 @@
     body {
         background-color: var(--background-color);
         margin-top: 1.5rem;
+        transition: background-color 0.25s ease-in-out;
+    }
+    .themeButton {
+        margin: 0 0.5rem;
     }
 }
 
@@ -11,6 +15,7 @@
     body {
         background-color: var(--background-color);
         margin-top: 3rem;
+        transition: background-color 0.25s ease-in-out;
     }
 
     .appHeader {
@@ -25,7 +30,7 @@
         right: 0;
         z-index: 1000;
         background-color: var(--background-color);
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
     }
 
     .headerTitle {
@@ -35,7 +40,7 @@
         text-decoration: none;
         color: var(--desktop-link);
         font-weight: bold;
-        transition: color 0.3s ease;
+        transition: color 0.25s ease;
     }
 
     .barsBtn {
@@ -45,7 +50,7 @@
 
     .barsIcon {
         color: var(--desktop-link);
-        transition: color 0.3s ease;
+        transition: color 0.25s ease;
     }
 
     .barsBtn:active .barsIcon {
@@ -81,7 +86,7 @@
         font-size: 1.2rem;
         color: var(--mobile-link);
         display: block;
-        transition: color 0.3s, transform 0.3s;
+        transition: color 0.25s, transform 0.25s;
         font-weight: bold;
     }
 
@@ -92,6 +97,22 @@
     /*.page-link:active {*/
     /*    color: #55C1CD;*/
     /*}*/
+
+    .mobileHeaderButtons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .themeButton {
+        background-color: var(--desktop-link);
+        border-width: 0;
+        border-radius: 0.5rem;
+        padding: 0.2rem 0.5rem;
+        color: var(--background-color);
+        margin-right: 1rem;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    }
 
     .closeBtn {
         background: none;
@@ -107,7 +128,7 @@
 
     .xIcon {
         color: var(--desktop-link);
-        transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;;
+        transition: all 0.25s ease-in-out, transform 0.25s ease-in-out;;
     }
 
     .navList {
@@ -133,6 +154,7 @@
     body {
         background-color: var(--background-color);
         margin-top: 3rem;
+        transition: background-color 0.25s ease-in-out;
     }
 
     .appHeader {
@@ -147,7 +169,7 @@
         right: 0;
         z-index: 1000;
         background-color: var(--background-color);
-        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
     }
 
     .headerTitle {
@@ -158,11 +180,15 @@
         text-decoration: none;
         color: var(--desktop-link);
         font-weight: bold;
-        transition: color 0.3s ease;
+        transition: color 0.25s ease;
     }
 
     .headerTitle:hover {
         color: var(--text-hover);
+    }
+
+    .mobileNavbar {
+        display: none;
     }
 
     .desktopNavbar {
@@ -186,16 +212,26 @@
         font-size: 1.2rem;
         color: var(--desktop-link);
         display: block;
-        transition: color 0.3s, transform 0.3s;
+        transition: color 0.25s, transform 0.25s;
     }
 
     .pageLink:hover {
         color: var(--text-hover);
-        /*transition: font-weight 0.3s ease-in-out;*/
+        /*transition: font-weight 0.25s ease-in-out;*/
     }
 
     .pageLinkContainer {
         padding: 0 1.5rem;
+    }
+
+    .themeButton {
+        background-color: var(--desktop-link);
+        border-width: 0;
+        border-radius: 0.5rem;
+        padding: 0.2rem 0.5rem;
+        color: var(--background-color);
+        margin-right: 1rem;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .closeBtn {

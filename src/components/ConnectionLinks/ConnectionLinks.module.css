@@ -17,11 +17,11 @@
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         color: var(--desktop-link);
-        transition: color 0.3s ease;
         background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
         /*margin: 0 0.5rem;*/
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .emailLink:hover {
@@ -57,11 +57,11 @@
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         color: var(--desktop-link);
-        transition: color 0.3s ease;
         background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
         margin: 0 1rem;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .emailLink:hover {
@@ -97,11 +97,11 @@
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
         color: var(--desktop-link);
-        transition: color 0.3s ease;
         background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
         margin: 0 1rem;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .emailLink:hover {

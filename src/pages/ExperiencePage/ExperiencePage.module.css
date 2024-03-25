@@ -11,6 +11,7 @@
         overflow-x: hidden;
         font-size: calc(10px + 2vmin);
         min-height: 100vh;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .cardsDiv {
@@ -35,6 +36,7 @@
         width: 100%;
         color: var(--primary-text);
         font-size: 0.85em;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .cardTop {
@@ -82,6 +84,7 @@
         overflow-x: hidden;
         font-size: calc(10px + 2vmin);
         min-height: 100vh;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .cardsDiv {
@@ -106,6 +109,7 @@
         max-width: 100%;
         color: var(--primary-text);
         font-size: 0.85em;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .cardTop {
@@ -154,6 +158,7 @@
         overflow-x: hidden;
         font-size: calc(10px + 2vmin);
         min-height: 100vh;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     .cardsDiv {
@@ -179,6 +184,7 @@
         color: var(--primary-text);
         font-size: 0.85em;
         /*animation: cardSlideIn 1s ease-out;*/
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
     @keyframes cardSlideIn {

@@ -5,12 +5,12 @@ import Layout from './components/Layout/Layout';
 import ExperiencePage from './pages/ExperiencePage/ExperiencePage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 
-const AppRoutes = () => {
+const AppRoutes = ({toggleTheme, theme}) => {
     return (
         <Routes>
-            <Route path="/" element={<Layout><AboutPage /></Layout>} />
-            <Route path="/experience" element={<Layout><ExperiencePage /></Layout>} />
-            <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
+            <Route path="/" element={<Layout toggleTheme={toggleTheme} theme={theme}><AboutPage /></Layout>} />
+            <Route path="/experience" element={<Layout toggleTheme={toggleTheme} theme={theme}><ExperiencePage /></Layout>} />
+            <Route path="/projects" element={<Layout toggleTheme={toggleTheme} theme={theme}><ProjectsPage /></Layout>} />
         </Routes>
     );
 };
