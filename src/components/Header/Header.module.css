@@ -114,6 +114,10 @@
         transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     }
 
+    .themeButton:hover {
+        background-color: var(--text-hover);
+    }
+
     .closeBtn {
         background: none;
         border: none;
@@ -232,6 +236,10 @@
         color: var(--background-color);
         margin-right: 1rem;
         transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    }
+
+    .themeButton:hover {
+        background-color: var(--text-hover);
     }
 
     .closeBtn {
