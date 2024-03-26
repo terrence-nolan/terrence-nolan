@@ -115,7 +115,7 @@ const Header = ({ scrolled, toggleTheme, theme }) => {
                 </div>
                 <div className={styles.mobileHeaderButtons}>
                     <button onClick={toggleTheme} className={styles.themeButton}>
-                        Toggle Theme
+                        Theme
                     </button>
                     <button
                         onClick={openNav}
