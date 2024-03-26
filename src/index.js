@@ -18,11 +18,10 @@ const setTheme = (theme) => {
 const toggleTheme = () => {
     const currentTheme = localStorage.theme || "light";
     const newTheme = currentTheme === "light" ? "dark" : "light";
-    setTheme(newTheme); // Assuming setTheme is available here
+    setTheme(newTheme);
 };
 
-// Set the initial theme (e.g., dark theme by default)
-setTheme(); // You can change this to 'light' if you want light theme by default
+setTheme();
 
 const themeVar = localStorage.theme;
 

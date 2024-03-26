@@ -43,7 +43,7 @@ const Header = ({ scrolled, toggleTheme, theme }) => {
                     </Link>
                 </div>
                 <button onClick={toggleTheme} className={styles.themeButton}>
-                    Toggle Theme
+                    {theme === 'light' ? 'Light Theme' : 'Dark Theme'}
                 </button>
             </div>
         )
@@ -115,7 +115,7 @@ const Header = ({ scrolled, toggleTheme, theme }) => {
                 </div>
                 <div className={styles.mobileHeaderButtons}>
                     <button onClick={toggleTheme} className={styles.themeButton}>
-                        Toggle Theme
+                        {theme === 'light' ? 'Light Theme' : 'Dark Theme'}
                     </button>
                     <button
                         onClick={openNav}

@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import styles from './ExperiencePage.module.css';
 import images from '../../images/images';
 import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
+import {ExperienceCard} from "../../components/ExperienceCard/ExperienceCard";
 
 const ExperiencePage = () => {
     useEffect(() => {
@@ -13,6 +14,17 @@ const ExperiencePage = () => {
             document.title = "Terrence Nolan";
         };
     }, [])
+
+    const chewyDescription = [
+        "Extracted the My Pet Health page UI from microsite framework and implemented it into a SPA which resulted in performance increase of 160% in Google Lighthouse.",
+        "Deployment of the SPA generated savings of $14k annually through the elimination of an unnecessary EKS instance.",
+        "Enhanced user experience through improvement of HTML accessibility and incorporation of company design system.",
+        "Tools used in the completion of the project included React, TypeScript, Jest, Docker, and Jenkins.",
+        "Gained experience working in an agile workflow system of sprints.",
+        "Initiated discussions with members of the product team to discuss certain design ideas and suggest additional capabilities for the page and its components."
+    ];
+
+    const chewySkills = ["React", "TypeScript", "Jest", "Docker", "Jenkins"];
 
     return (
         <main className={styles.expMain}>
@@ -72,6 +84,19 @@ const ExperiencePage = () => {
                     <li>Built interactive dashboards using select network vulnerability data on Tableau with importance to cybersecurity team</li>
                 </ul>
             </div>
+
+            <ExperienceCard
+                companyName={"Chewy, Inc."}
+                companyLocation={"Boston, MA"}
+                companyLink={"https://www.chewy.com/"}
+                startDate={"JUNE 2024"}
+                endDate={"AUG 2024"}
+                positionTitle={"Software Engineering Intern"}
+                description={chewyDescription}
+                links={["https://www.chewy.com/pethealth/"]}
+                linkText={["My Pet Health"]}
+                skills={chewySkills}
+            />
             <ConnectionLinks />
         </main>
     );

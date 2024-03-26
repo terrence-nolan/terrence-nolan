@@ -1,0 +1,172 @@
+.expMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 1em;
+    overflow-x: hidden;
+    font-size: calc(10px + 2vmin);
+    min-height: 100vh;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.cardsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: left;
+    border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    overflow: auto;
+    color: var(--primary-text);
+    font-size: 0.85em;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.companyLink {
+    text-decoration: none;
+}
+
+.datesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1em 0 0;
+}
+
+.dates {
+    font-size: 0.6em;
+}
+
+.card:hover {
+    background-color: var(--foreground-color);
+    .headerText {
+        color: var(--desktop-link);
+    }
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerText {
+    text-align: left;
+    font-size: 0.8em;
+    color: var(--primary-text);
+    transition: color 0.25s ease-in-out;
+}
+
+.locationText {
+    text-align: right;
+    font-size: 0.65em;
+    color: var(--placeholder-text);
+}
+
+.descriptionList {
+    font-size: 0.65em;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.linksList {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0.5em 0 0 0;
+}
+
+.linkItem {
+    text-decoration: none;
+}
+
+.linkItemContainer {
+    font-size: 0.65em;
+    color: var(--primary-text);
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: 0.2em 0.6em;
+    border-radius: 1em;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.linkItemContainer:hover {
+    color: var(--desktop-link);
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 0.25em;
+}
+
+.skillItem {
+    list-style-type: none;
+}
+
+.skillItemContainer {
+    font-size: 0.65em;
+    color: var(--primary-text);
+    background-color: var(--desktop-link);
+    width: fit-content;
+    padding: 0.2em 0.6em;
+    margin: 0.6em 0.6em 0 0;
+    border-radius: 1em;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    .expMain {
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .rightText {
+        text-align: left;
+    }
+
+    .cardsDiv {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1085px) {
+    .cardsDiv {
+        align-items: flex-end;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    .leftText {
+        text-align: left;
+    }
+
+    .rightText {
+        text-align: right;
+    }
+
+    .flexSpacer {
+        @media (min-width: 768px) {
+            flex: 1;
+            min-width: 2em;
+        }
+    }
+
+    .list {
+        font-size: max(0.75em, 14px);
+        padding-left: 1.2em;
+    }
+}
