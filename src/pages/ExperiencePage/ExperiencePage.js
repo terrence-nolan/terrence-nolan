@@ -72,7 +72,6 @@ const ExperiencePage = () => {
                     skills={massportSkills}
                 />
             </ol>
-            <ConnectionLinks />
         </main>
     );
 }

@@ -1,7 +1,12 @@
-.aboutMain {
+.mainContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     color: var(--primary-text);
     background-color: var(--background-color);
@@ -9,8 +14,13 @@
     overflow-x: hidden;
     font-size: calc(10px + 2vmin);
     min-height: 100vh;
-    width: 50%;
+    width: 40%;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.pagesContainer {
+    padding: 6rem 0;
+    width: 60%;
 }
 
 .photoAndName {
@@ -48,13 +58,14 @@
 .textContainer {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
 }
 
 .position {
     font-size: 1.2rem;
     font-weight: 100;
     margin-bottom: 0.5rem;
+    align-self: flex-start;
 }
 
 .text {
@@ -101,13 +112,18 @@
 }
 
 @media (max-width: 480px) {
-    .aboutMain {
+    .mainContainer {
+        justify-content: flex-start;
+    }
+
+    .aboutContainer {
         padding: 1rem 1rem 0;
+        width: 100%;
     }
 }
 
 @media (min-width: 481px) and (max-width: 1084px) {
-    .aboutMain {
+    .aboutContainer {
         padding: 1rem 2rem;
     }
 
@@ -119,7 +135,12 @@
 }
 
 @media (min-width: 1085px) {
-    .aboutMain {
+    .mainContainer {
+        flex-direction: row;
+        padding: 0 6rem;
+    }
+
+    .aboutContainer {
         padding: 6rem 0;
     }
 }
