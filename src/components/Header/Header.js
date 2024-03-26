@@ -43,7 +43,7 @@ const Header = ({ scrolled, toggleTheme, theme }) => {
                     </Link>
                 </div>
                 <button onClick={toggleTheme} className={styles.themeButton}>
-                    Toggle Theme
+                    Theme
                 </button>
             </div>
         )
