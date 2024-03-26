@@ -21,14 +21,12 @@ const ExperiencePage = () => {
         "Gained experience working in an agile workflow system of sprints.",
         "Initiated discussions with members of the product team to discuss certain design ideas and suggest additional capabilities for the page and its components."
     ];
-
     const chewySkills = ["React", "TypeScript", "Jest", "Docker", "Jenkins"];
 
     const augustinianDescription = [
         "Redesigned the appearance of the Institute of Augustine Spirituality website and transferred the site from from Joomla to Wix in English, Italian, and Spanish.",
         "Built a front-end UI for a database solution to store information about Augustinian schools and churches."
     ]
-
     const augustinianSkills = ["Wix", "JavaScript", "HTML", "CSS", "Excel"]
 
     const massportDescription = [
@@ -36,7 +34,6 @@ const ExperiencePage = () => {
         "Creation of the pipeline was integral to company's ability to manipulate and present gathered data.",
         "Built interactive dashboards using select network vulnerability data on Tableau with importance to cybersecurity team."
     ]
-
     const massportSkills = ["SnapLogic", "Tableau", "Snowflake", "SQL"]
 
     return (
