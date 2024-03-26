@@ -37,7 +37,7 @@ const ExperiencePage = () => {
     const massportSkills = ["SnapLogic", "Tableau", "Snowflake", "SQL"]
 
     return (
-        <main className={styles.expMain}>
+        <section className={styles.expMain}>
             <ol className={styles.experienceList}>
                 <ExperienceCard
                     companyName={"Chewy, Inc."}
@@ -72,7 +72,7 @@ const ExperiencePage = () => {
                     skills={massportSkills}
                 />
             </ol>
-        </main>
+        </section>
     );
 }
 

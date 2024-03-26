@@ -12,6 +12,7 @@
 
 .experienceList {
     list-style-type: none;
+    padding: 0;
 }
 
 @media (min-width: 481px) {

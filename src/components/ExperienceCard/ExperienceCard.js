@@ -18,7 +18,7 @@ export const ExperienceCard = ({
 }) => {
 
     return (
-        <li className={styles.cardsDiv}>
+        <li className={styles.cardContainer}>
             <a href={companyLink} target={"_blank"} rel="noopener noreferrer" className={styles.companyLink}>
                 <div className={styles.card}>
                     <header className={styles.dates}>

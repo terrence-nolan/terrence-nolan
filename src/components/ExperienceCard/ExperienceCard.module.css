@@ -10,6 +10,10 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
+.cardContainer {
+    list-style-type: none;
+}
+
 .card {
     display: flex;
     flex-direction: row;
@@ -103,6 +107,7 @@
     }
 
     .card {
+        flex-direction: column;
         width: 100%;
     }
 
@@ -110,13 +115,13 @@
         text-align: left;
     }
 
-    .cardsDiv {
+    .cardContainer {
         align-items: center;
     }
 }
 
 @media (min-width: 1085px) {
-    .cardsDiv {
+    .cardContainer {
         align-items: flex-end;
         justify-content: center;
         align-content: flex-end;
