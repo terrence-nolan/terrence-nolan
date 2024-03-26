@@ -44,7 +44,7 @@
 .card:hover {
     background-color: var(--foreground-color);
     .headerText {
-        color: var(--desktop-link);
+        color: var(--primary-blue);
     }
 }
 
@@ -98,7 +98,7 @@
 }
 
 .linkItemContainer:hover {
-    color: var(--desktop-link);
+    color: var(--primary-blue);
 }
 
 @media (max-width: 480px) {

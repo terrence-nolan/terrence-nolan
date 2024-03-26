@@ -38,7 +38,7 @@
         text-align: center;
         margin: 0;
         text-decoration: none;
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         font-weight: bold;
         transition: color 0.25s ease;
     }
@@ -49,7 +49,7 @@
     }
 
     .barsIcon {
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         transition: color 0.25s ease;
     }
 
@@ -105,7 +105,7 @@
     }
 
     .themeButton {
-        background-color: var(--desktop-link);
+        background-color: var(--primary-blue);
         border-width: 0;
         border-radius: 0.5rem;
         padding: 0.2rem 0.5rem;
@@ -131,7 +131,7 @@
     }
 
     .xIcon {
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         transition: all 0.25s ease-in-out, transform 0.25s ease-in-out;;
     }
 
@@ -182,7 +182,7 @@
         margin: 0;
         padding-left: 1.5rem;
         text-decoration: none;
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         font-weight: bold;
         transition: color 0.25s ease;
     }
@@ -214,7 +214,7 @@
         /*padding: 0 1rem;*/
         text-decoration: none;
         font-size: 1.2rem;
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         display: block;
         transition: color 0.25s, transform 0.25s;
     }
@@ -229,7 +229,7 @@
     }
 
     .themeButton {
-        background-color: var(--desktop-link);
+        background-color: var(--primary-blue);
         border-width: 0;
         border-radius: 0.5rem;
         padding: 0.2rem 0.5rem;

@@ -11,9 +11,12 @@
 }
 
 .skillItemContainer {
+    display: flex;
+    align-items: center;
     font-size: 0.8rem;
-    color: var(--primary-text);
-    background-color: var(--desktop-link);
+    font-weight: 600;
+    color: var(--primary-blue);
+    background-color: var(--opaque-prim-blue);
     width: fit-content;
     padding: 0.2rem 0.6rem;
     margin: 0.6rem 0.6rem 0 0;

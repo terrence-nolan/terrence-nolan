@@ -16,7 +16,7 @@
         justify-content: center;
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
@@ -56,7 +56,7 @@
         justify-content: center;
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
@@ -96,7 +96,7 @@
         justify-content: center;
         align-content: center;
         box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--desktop-link);
+        color: var(--primary-blue);
         background-color: var(--foreground-color);
         border-radius: 1rem;
         padding: 1rem;
