@@ -38,7 +38,7 @@ const ExperiencePage = () => {
 
     return (
         <main className={styles.expMain}>
-            <ol>
+            <ol className={styles.experienceList}>
                 <ExperienceCard
                     companyName={"Chewy, Inc."}
                     companyLocation={"Boston, MA"}
