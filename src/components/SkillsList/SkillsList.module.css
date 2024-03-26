@@ -1,0 +1,21 @@
+.skillsList {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 0.25rem;
+}
+
+.skillItem {
+    list-style-type: none;
+}
+
+.skillItemContainer {
+    font-size: 0.8rem;
+    color: var(--primary-text);
+    background-color: var(--desktop-link);
+    width: fit-content;
+    padding: 0.2rem 0.6rem;
+    margin: 0.6rem 0.6rem 0 0;
+    border-radius: 1rem;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}

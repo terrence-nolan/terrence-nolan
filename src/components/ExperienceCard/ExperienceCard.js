@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "./ExperienceCard.module.css";
 import {faLink} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {SkillsList} from "../SkillsList/SkillsList";
 
 export const ExperienceCard = ({
                                    companyName,
@@ -46,15 +47,7 @@ export const ExperienceCard = ({
                             :
                             <></>
                         }
-                        <ul className={styles.skillsList}>
-                            {skills.map((skill, index) => (
-                                <li key={index} className={styles.skillItem}>
-                                    <div className={styles.skillItemContainer}>
-                                        {skill}
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
+                        <SkillsList skills={skills} />
                     </div>
                 </div>
             </a>
