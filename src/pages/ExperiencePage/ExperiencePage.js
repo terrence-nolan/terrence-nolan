@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 import styles from './ExperiencePage.module.css';
-import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
 import {ExperienceCard} from "../../components/ExperienceCard/ExperienceCard";
 
 const ExperiencePage = () => {

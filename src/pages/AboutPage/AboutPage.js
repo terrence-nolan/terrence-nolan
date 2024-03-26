@@ -3,6 +3,7 @@ import styles from './AboutPage.module.css';
 import {SkillsAndTechPage} from "../SkillsAndTechPage/SkillsAndTechPage";
 import ExperiencePage from "../ExperiencePage/ExperiencePage";
 import {AboutSection} from "../AboutSection/AboutSection";
+import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
 
 const AboutPage = () => {
 
@@ -21,6 +22,7 @@ const AboutPage = () => {
             <div className={styles.aboutContainer}>
                 <AboutSection />
                 <SkillsAndTechPage />
+                <ConnectionLinks />
             </div>
             <div className={styles.pagesContainer}>
                 <ExperiencePage />
