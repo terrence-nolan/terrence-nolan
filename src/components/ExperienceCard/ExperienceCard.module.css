@@ -10,13 +10,6 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-.cardsDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-}
-
 .card {
     display: flex;
     flex-direction: row;
