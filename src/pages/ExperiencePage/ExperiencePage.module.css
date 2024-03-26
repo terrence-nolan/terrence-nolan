@@ -10,6 +10,10 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
+.experienceList {
+    list-style: none;
+}
+
 @media (min-width: 481px) {
     .expMain {
         padding: 1rem;
