@@ -12,10 +12,6 @@ export const AboutSection = () => {
             <div className={styles.textContainer}>
                 <span className={styles.position}>CS @ Villanova University</span>
                 <span className={styles.text}>Expected Graduation: <span className={styles.blueText}>May 2024</span></span>
-                <p className={styles.text}>I am a senior CS student looking for a full time SWE role,
-                    with a budding passion for front-end engineering.</p>
-                <span className={styles.text}>Elective Coursework: Applied Machine Learning, Computer Graphics,
-                            Overview of Cybersecurity</span>
             </div>
         </div>
     )

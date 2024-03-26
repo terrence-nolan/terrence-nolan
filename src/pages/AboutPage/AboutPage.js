@@ -4,6 +4,7 @@ import {SkillsAndTechPage} from "../SkillsAndTechPage/SkillsAndTechPage";
 import ExperiencePage from "../ExperiencePage/ExperiencePage";
 import {AboutSection} from "../AboutSection/AboutSection";
 import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
+import {BioSection} from "../BioSection/BioSection";
 
 const AboutPage = () => {
 
@@ -25,6 +26,7 @@ const AboutPage = () => {
                 <ConnectionLinks />
             </div>
             <div className={styles.pagesContainer}>
+                <BioSection />
                 <ExperiencePage />
             </div>
         </main>
