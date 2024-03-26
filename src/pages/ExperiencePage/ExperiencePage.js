@@ -18,7 +18,6 @@ const ExperiencePage = () => {
         "Extracted the My Pet Health page UI from microsite framework and implemented it into a SPA which resulted in performance increase of 160% in Google Lighthouse.",
         "Deployment of the SPA generated savings of $14k annually through the elimination of an unnecessary EKS instance.",
         "Enhanced user experience through improvement of HTML accessibility and incorporation of company design system.",
-        "Tools used in the completion of the project included React, TypeScript, Jest, Docker, and Jenkins.",
         "Gained experience working in an agile workflow system of sprints.",
         "Initiated discussions with members of the product team to discuss certain design ideas and suggest additional capabilities for the page and its components."
     ];
@@ -42,38 +41,40 @@ const ExperiencePage = () => {
 
     return (
         <main className={styles.expMain}>
-            <ExperienceCard
-                companyName={"Chewy, Inc."}
-                companyLocation={"Boston, MA"}
-                companyLink={"https://www.chewy.com/"}
-                startDate={"JUN 2024"}
-                endDate={"AUG 2024"}
-                positionTitle={"Software Engineering Intern"}
-                description={chewyDescription}
-                links={["https://www.chewy.com/pethealth/"]}
-                linkText={["My Pet Health"]}
-                skills={chewySkills}
-            />
-            <ExperienceCard
-                companyName={"Roman Augustinian Curia"}
-                companyLocation={"Rome, Italy"}
-                companyLink={"https://www.augustinianorder.org/"}
-                startDate={"FEB 2023"}
-                endDate={"MAY 2023"}
-                positionTitle={"Software Development Intern"}
-                description={augustinianDescription}
-                skills={augustinianSkills}
-            />
-            <ExperienceCard
-                companyName={"Massachusetts Port Authority"}
-                companyLocation={"Boston, MA"}
-                companyLink={"https://www.massport.com/"}
-                startDate={"JUN 2022"}
-                endDate={"AUG 2022"}
-                positionTitle={"Technical Assistant Intern"}
-                description={massportDescription}
-                skills={massportSkills}
-            />
+            <ol>
+                <ExperienceCard
+                    companyName={"Chewy, Inc."}
+                    companyLocation={"Boston, MA"}
+                    companyLink={"https://www.chewy.com/"}
+                    startDate={"JUN 2024"}
+                    endDate={"AUG 2024"}
+                    positionTitle={"Software Engineering Intern"}
+                    description={chewyDescription}
+                    links={["https://www.chewy.com/pethealth/"]}
+                    linkText={["My Pet Health"]}
+                    skills={chewySkills}
+                />
+                <ExperienceCard
+                    companyName={"Roman Augustinian Curia"}
+                    companyLocation={"Rome, Italy"}
+                    companyLink={"https://www.augustinianorder.org/"}
+                    startDate={"FEB 2023"}
+                    endDate={"MAY 2023"}
+                    positionTitle={"Software Development Intern"}
+                    description={augustinianDescription}
+                    skills={augustinianSkills}
+                />
+                <ExperienceCard
+                    companyName={"Massachusetts Port Authority"}
+                    companyLocation={"Boston, MA"}
+                    companyLink={"https://www.massport.com/"}
+                    startDate={"JUN 2022"}
+                    endDate={"AUG 2022"}
+                    positionTitle={"Technical Assistant Intern"}
+                    description={massportDescription}
+                    skills={massportSkills}
+                />
+            </ol>
             <ConnectionLinks />
         </main>
     );
