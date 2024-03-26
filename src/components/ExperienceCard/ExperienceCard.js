@@ -13,20 +13,21 @@ export const ExperienceCard = ({
                                    description,
                                    links,
                                    linkText,
-                                   skills
+                                   skills,
 }) => {
+
     return (
         <li className={styles.cardsDiv}>
             <a href={companyLink} target={"_blank"} rel="noopener noreferrer" className={styles.companyLink}>
                 <div className={styles.card}>
-                    <div className={styles.datesContainer}>
-                        <span className={styles.dates}>{startDate} – {endDate}</span>
-                    </div>
+                    <header className={styles.dates}>
+                        {startDate} – {endDate}
+                    </header>
                     <div className={styles.info}>
                         <div className={styles.cardHeader}>
                             <span className={styles.headerText}>{positionTitle} • {companyName}</span>
+                            <span className={styles.locationText}>{companyLocation}</span>
                         </div>
-                        <span className={styles.locationText}>{companyLocation}</span>
                         <ul className={styles.descriptionList}>
                             {description.map((line, index) => (
                                 <li key={index}>{line}</li>
