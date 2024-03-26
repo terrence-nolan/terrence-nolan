@@ -1,0 +1,13 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.subsectionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 0.9rem;
+}

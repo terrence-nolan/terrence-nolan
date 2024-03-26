@@ -5,16 +5,33 @@
     align-items: center;
     color: var(--primary-text);
     background-color: var(--background-color);
-    padding: 1rem;
+    padding: 6rem 0;
     overflow-x: hidden;
     font-size: calc(10px + 2vmin);
     min-height: 100vh;
+    width: 50%;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-.introSection {
+.photoAndName {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.name {
+    padding: 0 0 0 1rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.firstName {
+    color: var(--desktop-link);
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     /*align-content: stretch;*/
     align-items: flex-start;
@@ -26,6 +43,23 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+}
+
+.position {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
 .card {
@@ -54,7 +88,6 @@
 
 .image {
     border-radius: 10rem;
-    margin: 0.5rem;
     flex: 0 0 auto;
     max-height: 5rem;
 }
@@ -78,7 +111,7 @@
         padding: 1rem 2rem;
     }
 
-    .introSection {
+    .introContainer {
         @media (max-width: 505px) {
             flex-direction: column;
         }
@@ -87,6 +120,6 @@
 
 @media (min-width: 1085px) {
     .aboutMain {
-        padding: 1rem 5rem 2rem;
+        padding: 6rem 0;
     }
 }
