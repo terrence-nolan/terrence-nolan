@@ -28,22 +28,8 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-.card:hover .headerText {
+.card:hover .headerContainer {
     color: var(--primary-blue);
-}
-
-.companyLink {
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.arrowIconContainer {
-    margin-left: 0.5rem;
-    font-size: 0.7rem;
-}
-
-.arrowIcon {
-    transition: transform 0.25s ease-in-out;
 }
 
 .dates {
@@ -66,18 +52,35 @@
     margin-bottom: 0.4rem;
 }
 
-.headerText {
+.headerContainer {
     text-align: left;
     font-size: 1rem;
     color: var(--primary-text);
     transition: color 0.25s ease-in-out;
 }
 
+.headerText {
+    margin-right: 0.5rem;
+}
+
+.companyLink {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.arrowIconContainer {
+    font-size: 0.7rem;
+}
+
+.arrowIcon {
+    transition: transform 0.25s ease-in-out;
+}
+
 .companyLink:hover .arrowIcon {
     transform: translateX(0.25rem) translateY(-0.25rem);
 }
 
-.companyLink:hover .headerText {
+.companyLink:hover .headerContainer {
     color: var(--secondary-blue);
 }
 
@@ -157,7 +160,7 @@
 
     .card:hover {
         background-color: var(--foreground-color);
-        .headerText {
+        .headerContainer {
             color: var(--primary-blue);
         }
     }

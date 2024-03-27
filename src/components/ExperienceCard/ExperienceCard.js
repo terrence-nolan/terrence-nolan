@@ -28,8 +28,11 @@ export const ExperienceCard = ({
                 <div className={styles.info}>
                     <div className={styles.cardHeader}>
                         <a href={companyLink} target={"_blank"} rel="noopener noreferrer" className={styles.companyLink}>
-                            <span className={styles.headerText}>
-                                {positionTitle} • {companyName}<span className={styles.arrowIconContainer}><FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.arrowIcon} /></span>
+                            <span className={styles.headerContainer}>
+                                <span className={styles.headerText}>{positionTitle} • {companyName}</span>
+                                <span className={styles.arrowIconContainer}>
+                                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.arrowIcon} />
+                                </span>
                             </span>
                         </a>
                         <span className={styles.locationText}>{companyLocation}</span>
