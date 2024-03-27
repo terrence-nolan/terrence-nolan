@@ -18,7 +18,12 @@ export const ProjectCard = ({
             <div className={styles.card}>
                 <div className={styles.info}>
                     <div className={styles.cardHeader}>
-                        <a href={projectLink} target={"_blank"} rel="noopener noreferrer" className={styles.projectLink}>
+                        <a
+                            href={projectLink}
+                            target={"_blank"}
+                            rel="noopener noreferrer"
+                            className={styles.projectLink}
+                        >
                             <span className={styles.headerContainer}>
                                 <span className={styles.headerText}>{projectName}</span>
                                 <span className={styles.arrowIconContainer}>
@@ -33,7 +38,12 @@ export const ProjectCard = ({
                     {otherLinks && otherLinksText ?
                         <ul className={styles.linksList}>
                             {otherLinks.map((link, index) => (
-                                <a href={link} className={styles.linkItem}>
+                                <a
+                                    href={link}
+                                    target={"_blank"}
+                                    rel="noopener noreferrer"
+                                    className={styles.linkItem}
+                                >
                                     <div className={styles.linkItemContainer}>
                                         <span key={index}><FontAwesomeIcon icon={faLink} /> {otherLinksText}</span>
                                     </div>

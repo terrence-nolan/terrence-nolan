@@ -25,7 +25,12 @@ export const ExperienceCard = ({
                 </header>
                 <div className={styles.info}>
                     <div className={styles.cardHeader}>
-                        <a href={companyLink} target={"_blank"} rel="noopener noreferrer" className={styles.companyLink}>
+                        <a
+                            href={companyLink}
+                            target={"_blank"}
+                            rel="noopener noreferrer"
+                            className={styles.companyLink}
+                        >
                             <span className={styles.headerContainer}>
                                 <span className={styles.headerText}>{positionTitle} • {companyName}</span>
                                 <span className={styles.arrowIconContainer}>
@@ -43,7 +48,13 @@ export const ExperienceCard = ({
                     {links && linkText ?
                         <ul className={styles.linksList}>
                             {links.map((link, index) => (
-                                <a key={index} href={link} className={styles.linkItem}>
+                                <a
+                                    key={index}
+                                    href={link}
+                                    target={"_blank"}
+                                    rel="noopener noreferrer"
+                                    className={styles.linkItem}
+                                >
                                     <div className={styles.linkItemContainer}>
                                         <span key={index}><FontAwesomeIcon icon={faLink} /> {linkText}</span>
                                     </div>
