@@ -1,0 +1,31 @@
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--primary-text);
+    padding: 0.2rem 0;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.underline {
+    background-color: var(--primary-blue);
+    height: 0.1rem;
+}
+
+.projectsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 0;
+    overflow-x: hidden;
+    font-size: calc(10px + 2vmin);
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    gap: 1rem;
+}

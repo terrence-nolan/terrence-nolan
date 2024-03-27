@@ -1,43 +1,47 @@
 import React from "react";
 import styles from './ConnectionLinks.module.css';
-import {Link} from "react-router-dom";
+import ResumePDF from './../../utils/terrence-nolan-resume.pdf';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faFile} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 const ConnectionLinks = () => {
     return (
         <div className={styles.connectLinksContainer}>
-            <Link
-                to={'mailto:terrencenolan@proton.me'}
+            <a
+                href={'mailto:terrencenolan@proton.me'}
+                className={styles.link}
+                title={"Email"}
             >
-                <div className={`${styles.emailLink} ${styles.connectLinks}`}>
-                    <FontAwesomeIcon icon={faEnvelope} size={'1x'} />
-                </div>
-            </Link>
-            <Link
-                to={'https://github.com/terrence-nolan'}
+                <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+            <a
+                href={'https://github.com/terrence-nolan'}
                 target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+                title={"GitHub"}
             >
-                <div className={`${styles.github} ${styles.connectLinks}`}>
-                    <FontAwesomeIcon icon={faGithub} size={'1x'} />
-                </div>
-            </Link>
-            <Link
-                to={'https://www.linkedin.com/in/terrencenolan/'}
+                <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+                href={'https://www.linkedin.com/in/terrencenolan/'}
                 target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+                title={"LinkedIn"}
             >
-                <div className={`${styles.linkedin} ${styles.connectLinks}`}>
-                    <FontAwesomeIcon icon={faLinkedin} size={'1x'} />
-                </div>
-            </Link>
-            {/*<Link*/}
-            {/*    to={'tel:+16179092358'}*/}
-            {/*>*/}
-            {/*    <div  className={`${styles.phone} ${styles.connectLinks}`}>*/}
-            {/*        <FontAwesomeIcon icon={faPhone} size={'1x'} />*/}
-            {/*    </div>*/}
-            {/*</Link>*/}
+                <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+                href={ResumePDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+                title={"Resume"}
+            >
+                <FontAwesomeIcon icon={faFile} /><span className={styles.linkText}>Resume</span>
+            </a>
         </div>
     )
 }

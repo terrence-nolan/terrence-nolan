@@ -1,6 +1,5 @@
 body {
   background-color: var(--background-color) !important;
-  padding-top: 2.5rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,22 +15,16 @@ code {
 :root {
   --background-color: #F3F2F7;
   --foreground-color: #FFFFFF;
-  /*--foreground-color: #C6C5C7;*/
   --primary-text: #2E4053;
   --secondary-text: #F3F2F7;
   --placeholder-text: #C5C5C7;
-  /*--brick-red: #CD6155;*/
-  /*--dark-red: #803D35;*/
-  /*--slate-gray: #34495E;*/
-  /*--original-white: #E5E8E8;*/
-  --mobile-link: #52A6E9;
-  --desktop-link: #1888E2;
-  /*--blue-gray: #5983A4;*/
+  --primary-blue: #1888E2;
+  --secondary-blue: #52A6E9;
+  --opaque-prim-blue: rgba(24, 136, 226, 0.3);
   --text-hover: #0C4471;
-  --email: #6D4AFF;
-  --linkedin: #2A67BC;
   --github: #000000;
-  --phone: #75DB6F;
+  /*--toggle-fg: #f0eb9d;*/
+  --toggle-bg: #ffd000;
 }
 
 [data-theme="dark"] {
@@ -40,16 +33,11 @@ code {
   --primary-text: #E3EBF3;
   --secondary-text: #000000;
   --placeholder-text: #9B9BA1;
-  /*--brick-red: #CD6155;*/
-  /*--dark-red: #803D35;*/
-  /*--slate-gray: #34495E;*/
-  /*--original-white: #E5E8E8;*/
-  --mobile-link: #52A6E9;
-  --desktop-link: #1888E2;
-  /*--blue-gray: #5983A4;*/
+  --secondary-blue: #52A6E9;
+  --primary-blue: #1888E2;
+  --opaque-prim-blue: rgba(24, 136, 226, 0.2);
   --text-hover: #B4CEE3;
-  --email: #6D4AFF;
-  --linkedin: #2A67BC;
   --github: #FFFFFF;
-  --phone: #75DB6F;
+  /*--toggle-fg: #283452;*/
+  --toggle-bg: #00a6ff;
 }

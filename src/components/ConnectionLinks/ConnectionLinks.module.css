@@ -1,122 +1,28 @@
-@import '../../index.css';
-
-@media (max-width: 480px) {
-    .connectLinksContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1.5rem;
-        margin: 2rem 0 2rem;
-        width: 100%;
-    }
-
-    .connectLinks {
-        display: flex;
-        /*align-items: center;*/
-        justify-content: center;
-        align-content: center;
-        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--desktop-link);
-        background-color: var(--foreground-color);
-        border-radius: 1rem;
-        padding: 1rem;
-        /*margin: 0 0.5rem;*/
-        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-    }
-
-    .emailLink:hover {
-        color: var(--email);
-    }
-
-    .github:hover {
-        color: var(--github);
-    }
-
-    .linkedin:hover {
-        color: var(--linkedin);
-    }
-
-    /*.phone:hover {*/
-    /*    color: var(--phone);*/
-    /*}*/
+.connectLinksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin: 1rem 0 0 0;
+    width: 100%;
 }
 
-@media (min-width: 481px) and (max-width: 1084px) {
-    .connectLinksContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 3rem 0 1rem;
-    }
-
-    .connectLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--desktop-link);
-        background-color: var(--foreground-color);
-        border-radius: 1rem;
-        padding: 1rem;
-        margin: 0 1rem;
-        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-    }
-
-    .emailLink:hover {
-        color: var(--email);
-    }
-
-    .github:hover {
-        color: var(--github);
-    }
-
-    .linkedin:hover {
-        color: var(--linkedin);
-    }
-
-    /*.phone:hover {*/
-    /*    color: var(--phone);*/
-    /*}*/
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-@media (min-width: 1085px) {
-    .connectLinksContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 3rem 0 0;
-    }
+.link:hover {
+    color: var(--secondary-blue);
+}
 
-    .connectLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.2);
-        color: var(--desktop-link);
-        background-color: var(--foreground-color);
-        border-radius: 1rem;
-        padding: 1rem;
-        margin: 0 1rem;
-        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-    }
-
-    .emailLink:hover {
-        color: var(--email);
-    }
-
-    .github:hover {
-        color: var(--github);
-    }
-
-    .linkedin:hover {
-        color: var(--linkedin);
-    }
-
-    /*.phone:hover {*/
-    /*    color: var(--phone);*/
-    /*}*/
+.linkText {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 0.4rem;
 }
