@@ -37,6 +37,8 @@ const ExperiencePage = () => {
 
     return (
         <section className={styles.experienceMain}>
+            <span className={styles.sectionTitle}>Experience</span>
+            <div className={styles.underline}/>
             <ol className={styles.experienceList}>
                 <ExperienceCard
                     companyName={"Chewy, Inc."}

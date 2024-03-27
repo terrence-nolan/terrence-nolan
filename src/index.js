@@ -1,35 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Routes from './Routing';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import { BrowserRouter } from 'react-router-dom';
+import styles from "./pages/AboutPage/AboutPage.module.css";
+import {AboutSection} from "./pages/AboutSection/AboutSection";
+import {SkillsAndTechSection} from "./pages/SkillsAndTechSection/SkillsAndTechSection";
+import ConnectionLinks from "./components/ConnectionLinks/ConnectionLinks";
+import {BioSection} from "./pages/BioSection/BioSection";
+import ExperiencePage from "./pages/ExperiencePage/ExperiencePage";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 
 library.add(fas);
 
-const setTheme = (theme) => {
-    theme ??= localStorage.theme || "light";
-    document.documentElement.dataset.theme = theme;
-    localStorage.theme = theme;
-};
-
-const toggleTheme = () => {
-    const currentTheme = localStorage.theme || "light";
-    const newTheme = currentTheme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-};
-
-setTheme();
-
-const themeVar = localStorage.theme;
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <Routes toggleTheme={toggleTheme} theme={themeVar} />
-        </BrowserRouter>
-    </React.StrictMode>
+    <main className={styles.mainContainer}>
+        <div className={styles.aboutContainer}>
+            <AboutSection />
+            <SkillsAndTechSection />
+            <ConnectionLinks />
+        </div>
+        <div className={styles.pagesContainer}>
+            <BioSection />
+            <ExperiencePage />
+            <ProjectsPage />
+        </div>
+    </main>
 );

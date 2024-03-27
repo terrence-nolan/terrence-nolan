@@ -17,6 +17,8 @@ const ProjectsPage = () => {
 
     return (
         <section className={styles.projectsMain}>
+            <span className={styles.sectionTitle}>Projects</span>
+            <div className={styles.underline}/>
             <ol className={styles.projectsList}>
                 <ProjectCard
                     projectName={"Punchcard"}
