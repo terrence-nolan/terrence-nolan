@@ -17,7 +17,6 @@ export const ExperienceCard = ({
                                    linkText,
                                    skills,
 }) => {
-    const { isMobile, isTablet, isDesktop } = useScreenSizes();
 
     return (
         <li className={styles.cardContainer}>
