@@ -21,17 +21,24 @@
     text-align: left;
     border-radius: 0.5rem;
     margin: 0.5rem 0;
+    gap: 0.5rem;
     overflow: auto;
+    width: 100%;
     color: var(--primary-text);
-    /*font-size: 1rem;*/
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.card:hover .headerText {
+    color: var(--primary-blue);
 }
 
 .companyLink {
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .arrowIconContainer {
+    margin-left: 0.5rem;
     font-size: 0.7rem;
 }
 
@@ -43,19 +50,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 0.5rem 0 0;
     font-size: 0.8rem;
-    width: 20rem;
+    width: 30%;
 }
 
-.card:hover {
-    background-color: var(--foreground-color);
-    .headerText {
-        color: var(--primary-blue);
-    }
-    .arrowIcon {
-        transform: translateX(0.25rem) translateY(-0.25rem);
-    }
+.info {
+    width: 70%;
 }
 
 .cardHeader {
@@ -71,6 +71,14 @@
     font-size: 1rem;
     color: var(--primary-text);
     transition: color 0.25s ease-in-out;
+}
+
+.companyLink:hover .arrowIcon {
+    transform: translateX(0.25rem) translateY(-0.25rem);
+}
+
+.companyLink:hover .headerText {
+    color: var(--secondary-blue);
 }
 
 .locationText {
@@ -121,6 +129,18 @@
         width: 100%;
     }
 
+    .dates {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .linkItemContainer {
+        padding: 0.2rem 0.6rem 0.2rem 0;
+    }
+
     .rightText {
         text-align: left;
     }
@@ -130,11 +150,32 @@
     }
 }
 
-@media (min-width: 1085px) {
+@media (min-width: 481px) and (max-width: 1024px) {
+    .card {
+        padding: 0.5rem;
+    }
+
+    .card:hover {
+        background-color: var(--foreground-color);
+        .headerText {
+            color: var(--primary-blue);
+        }
+    }
+}
+
+@media (min-width: 1025px) {
     .cardContainer {
         align-items: flex-end;
         justify-content: center;
         align-content: flex-end;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
+    .card:hover {
+        background-color: var(--foreground-color);
     }
 
     .leftText {

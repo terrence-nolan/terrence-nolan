@@ -3,6 +3,7 @@ import styles from "./ExperienceCard.module.css";
 import {faLink, faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {SkillsList} from "../SkillsList/SkillsList";
+import { useScreenSizes } from "../../utils/screenSizes";
 
 export const ExperienceCard = ({
                                    companyName,
@@ -16,43 +17,44 @@ export const ExperienceCard = ({
                                    linkText,
                                    skills,
 }) => {
+    const { isMobile, isTablet, isDesktop } = useScreenSizes();
 
     return (
         <li className={styles.cardContainer}>
-            <a href={companyLink} target={"_blank"} rel="noopener noreferrer" className={styles.companyLink}>
-                <div className={styles.card}>
-                    <header className={styles.dates}>
-                        {startDate} – {endDate}
-                    </header>
-                    <div className={styles.info}>
-                        <div className={styles.cardHeader}>
+            <div className={styles.card}>
+                <header className={styles.dates}>
+                    {startDate} — {endDate}
+                </header>
+                <div className={styles.info}>
+                    <div className={styles.cardHeader}>
+                        <a href={companyLink} target={"_blank"} rel="noopener noreferrer" className={styles.companyLink}>
                             <span className={styles.headerText}>
-                                {positionTitle} • {companyName} <span className={styles.arrowIconContainer}><FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.arrowIcon} /></span>
+                                {positionTitle} • {companyName}<span className={styles.arrowIconContainer}><FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.arrowIcon} /></span>
                             </span>
-                            <span className={styles.locationText}>{companyLocation}</span>
-                        </div>
-                        <ul className={styles.descriptionList}>
-                            {description.map((line, index) => (
-                                <li key={index}>{line}</li>
+                        </a>
+                        <span className={styles.locationText}>{companyLocation}</span>
+                    </div>
+                    <ul className={styles.descriptionList}>
+                        {description.map((line, index) => (
+                            <li key={index}>{line}</li>
+                        ))}
+                    </ul>
+                    {links && linkText ?
+                        <ul className={styles.linksList}>
+                            {links.map((link, index) => (
+                                <a href={link} className={styles.linkItem}>
+                                    <div className={styles.linkItemContainer}>
+                                        <span key={index}><FontAwesomeIcon icon={faLink} /> {linkText}</span>
+                                    </div>
+                                </a>
                             ))}
                         </ul>
-                        {links && linkText ?
-                            <ul className={styles.linksList}>
-                                {links.map((link, index) => (
-                                    <a href={link} className={styles.linkItem}>
-                                        <div className={styles.linkItemContainer}>
-                                            <span key={index}><FontAwesomeIcon icon={faLink} /> {linkText}</span>
-                                        </div>
-                                    </a>
-                                ))}
-                            </ul>
-                            :
-                            <></>
-                        }
-                        <SkillsList skills={skills} />
-                    </div>
+                        :
+                        <></>
+                    }
+                    <SkillsList skills={skills} />
                 </div>
-            </a>
+            </div>
         </li>
     )
 }

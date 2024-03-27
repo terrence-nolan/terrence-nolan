@@ -18,8 +18,8 @@ code {
   --primary-text: #2E4053;
   --secondary-text: #F3F2F7;
   --placeholder-text: #C5C5C7;
-  --mobile-link: #52A6E9;
   --primary-blue: #1888E2;
+  --secondary-blue: #52A6E9;
   --opaque-prim-blue: rgba(24, 136, 226, 0.3);
   --text-hover: #0C4471;
   --github: #000000;
@@ -31,7 +31,7 @@ code {
   --primary-text: #E3EBF3;
   --secondary-text: #000000;
   --placeholder-text: #9B9BA1;
-  --mobile-link: #52A6E9;
+  --secondary-blue: #52A6E9;
   --primary-blue: #1888E2;
   --opaque-prim-blue: rgba(24, 136, 226, 0.2);
   --text-hover: #B4CEE3;
