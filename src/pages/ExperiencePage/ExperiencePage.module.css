@@ -1,4 +1,4 @@
-.expMain {
+.experienceMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,6 @@
     padding: 0;
     overflow-x: hidden;
     font-size: calc(10px + 2vmin);
-    min-height: 100vh;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 

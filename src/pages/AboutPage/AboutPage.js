@@ -5,6 +5,7 @@ import ExperiencePage from "../ExperiencePage/ExperiencePage";
 import {AboutSection} from "../AboutSection/AboutSection";
 import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
 import {BioSection} from "../BioSection/BioSection";
+import ProjectsPage from "../ProjectsPage/ProjectsPage";
 
 const AboutPage = () => {
 
@@ -28,6 +29,7 @@ const AboutPage = () => {
             <div className={styles.pagesContainer}>
                 <BioSection />
                 <ExperiencePage />
+                <ProjectsPage />
             </div>
         </main>
     );

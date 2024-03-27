@@ -3,7 +3,6 @@ import styles from "./ExperienceCard.module.css";
 import {faLink, faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {SkillsList} from "../SkillsList/SkillsList";
-import { useScreenSizes } from "../../utils/screenSizes";
 
 export const ExperienceCard = ({
                                    companyName,

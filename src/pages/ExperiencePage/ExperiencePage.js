@@ -20,7 +20,7 @@ const ExperiencePage = () => {
         "Gained experience working in an agile workflow system of sprints.",
         "Initiated discussions with members of the product team to discuss certain design ideas and suggest additional capabilities for the page and its components."
     ];
-    const chewySkills = ["React", "TypeScript", "Jest", "Docker", "Jenkins"];
+    const chewySkills = ["React", "TypeScript", "HTML", "SCSS", "Jest", "Docker", "Jenkins"];
 
     const augustinianDescription = [
         "Redesigned the appearance of the Institute of Augustine Spirituality website and transferred the site from from Joomla to Wix in English, Italian, and Spanish.",
@@ -36,7 +36,7 @@ const ExperiencePage = () => {
     const massportSkills = ["SnapLogic", "Tableau", "Snowflake", "SQL"]
 
     return (
-        <section className={styles.expMain}>
+        <section className={styles.experienceMain}>
             <ol className={styles.experienceList}>
                 <ExperienceCard
                     companyName={"Chewy, Inc."}

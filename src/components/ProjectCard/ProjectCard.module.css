@@ -1,0 +1,172 @@
+.cardContainer {
+    list-style-type: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: left;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    gap: 0.5rem;
+    overflow: auto;
+    width: 100%;
+    color: var(--primary-text);
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.card:hover .headerContainer {
+    color: var(--primary-blue);
+}
+
+.info {
+    width: 100%;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0.4rem;
+}
+
+.headerContainer {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--primary-text);
+    transition: color 0.25s ease-in-out;
+}
+
+.headerText {
+    margin-right: 0.5rem;
+}
+
+.projectLink {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.arrowIconContainer {
+    font-size: 0.7rem;
+}
+
+.arrowIcon {
+    transition: transform 0.25s ease-in-out;
+}
+
+.projectLink:hover .arrowIcon {
+    transform: translateX(0.25rem) translateY(-0.25rem);
+}
+
+.projectLink:hover .headerContainer {
+    color: var(--secondary-blue);
+}
+
+.description {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.linksList {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.linkItem {
+    text-decoration: none;
+}
+
+.linkItemContainer {
+    font-size: 0.8rem;
+    color: var(--primary-text);
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.linkItemContainer:hover {
+    color: var(--primary-blue);
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dates {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .linkItemContainer {
+        padding: 0.2rem 0.6rem 0.2rem 0;
+    }
+
+    .rightText {
+        text-align: left;
+    }
+
+    .cardContainer {
+        align-items: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .card {
+        padding: 0.5rem;
+    }
+
+    .card:hover {
+        background-color: var(--foreground-color);
+        .headerContainer {
+            color: var(--primary-blue);
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .cardContainer {
+        align-items: flex-end;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
+    .card:hover {
+        background-color: var(--foreground-color);
+    }
+
+    .leftText {
+        text-align: left;
+    }
+
+    .rightText {
+        text-align: right;
+    }
+
+    .flexSpacer {
+        @media (min-width: 768px) {
+            flex: 1;
+            min-width: 2rem;
+        }
+    }
+
+    .list {
+        font-size: max(0.75rem, 14px);
+        padding-left: 1.2rem;
+    }
+}

@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import styles from './ProjectsPage.module.css';
-import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
+import {ProjectCard} from "../../components/ProjectCard/ProjectCard";
 
 const ProjectsPage = () => {
     useEffect(() => {
@@ -13,13 +13,21 @@ const ProjectsPage = () => {
         };
     }, [])
 
+    const punchcardSkills = ["React Native", "JavaScript", "CSS", "Expo Go", "Figma", "MongoDB"]
+
     return (
-        <main className={styles.projectsMain}>
-            <div style={{flex: 1}}/>
-            <h1>Coming Soon!</h1>
-            <div style={{flex: 1}}/>
-            <ConnectionLinks />
-        </main>
+        <section className={styles.projectsMain}>
+            <ol className={styles.projectsList}>
+                <ProjectCard
+                    projectName={"Punchcard"}
+                    projectLink={"https://punchcard.work"}
+                    description={"Shift scheduling mobile application in which employees are able to build their own" +
+                        " schedules through claiming, transferring, and dropping posted shifts. " +
+                        "I designed and built the front end of the application."}
+                    skills={punchcardSkills}
+                />
+            </ol>
+        </section>
     );
 }
 
