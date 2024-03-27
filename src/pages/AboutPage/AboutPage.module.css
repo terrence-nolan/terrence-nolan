@@ -28,10 +28,11 @@
     .mainContainer {
         justify-content: flex-start;
         gap: 0;
+        padding: 3rem 1.5rem;
     }
 
     .aboutContainer {
-        padding: 1rem;
+        padding: 0;
         width: 100%;
     }
 
