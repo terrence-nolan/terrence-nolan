@@ -23,6 +23,7 @@ export const ProjectCard = ({
                             target={"_blank"}
                             rel="noopener noreferrer"
                             className={styles.projectLink}
+                            title={projectName}
                         >
                             <span className={styles.headerContainer}>
                                 <span className={styles.headerText}>{projectName}</span>
@@ -43,6 +44,7 @@ export const ProjectCard = ({
                                     target={"_blank"}
                                     rel="noopener noreferrer"
                                     className={styles.linkItem}
+                                    title={otherLinksText}
                                 >
                                     <div className={styles.linkItemContainer}>
                                         <span key={index}><FontAwesomeIcon icon={faLink} /> {otherLinksText}</span>

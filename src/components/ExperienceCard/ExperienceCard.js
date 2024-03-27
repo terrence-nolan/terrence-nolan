@@ -30,6 +30,7 @@ export const ExperienceCard = ({
                             target={"_blank"}
                             rel="noopener noreferrer"
                             className={styles.companyLink}
+                            title={companyName}
                         >
                             <span className={styles.headerContainer}>
                                 <span className={styles.headerText}>{positionTitle} • {companyName}</span>
@@ -54,6 +55,7 @@ export const ExperienceCard = ({
                                     target={"_blank"}
                                     rel="noopener noreferrer"
                                     className={styles.linkItem}
+                                    title={linkText}
                                 >
                                     <div className={styles.linkItemContainer}>
                                         <span key={index}><FontAwesomeIcon icon={faLink} /> {linkText}</span>
