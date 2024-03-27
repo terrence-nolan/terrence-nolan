@@ -17,3 +17,9 @@
         margin-bottom: 4rem;
     }
 }
+
+@media (min-width: 481px) and (max-width: 1084px) {
+    .bioContainer {
+        margin-bottom: 4rem;
+    }
+}

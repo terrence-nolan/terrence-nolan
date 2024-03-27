@@ -43,8 +43,19 @@
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
+    .mainContainer {
+        justify-content: flex-start;
+        gap: 0;
+        padding: 3rem 1.5rem;
+    }
+
     .aboutContainer {
-        padding: 1rem 2rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .pagesContainer {
+        padding: 6rem 0 0 0;
         width: 100%;
     }
 }
