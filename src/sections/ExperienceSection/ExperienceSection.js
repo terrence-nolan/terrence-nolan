@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
-import styles from './ExperiencePage.module.css';
+import styles from './ExperienceSection.module.css';
 import {ExperienceCard} from "../../components/ExperienceCard/ExperienceCard";
 
-const ExperiencePage = () => {
+const ExperienceSection = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
 
@@ -77,4 +77,4 @@ const ExperiencePage = () => {
     );
 }
 
-export default ExperiencePage;
+export default ExperienceSection;

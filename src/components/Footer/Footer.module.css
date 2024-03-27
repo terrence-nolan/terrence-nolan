@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     color: var(--primary-text);
-    /*position: absolute;*/
     bottom: 0;
     width: 100%;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;

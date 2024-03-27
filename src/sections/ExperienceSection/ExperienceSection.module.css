@@ -1,7 +1,9 @@
 .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 100;
     color: var(--primary-text);
     padding: 0.2rem 0;
-    font-size: 1.5rem;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .underline {

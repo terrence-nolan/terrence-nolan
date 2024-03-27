@@ -1,6 +1,6 @@
+import React from "react";
 import styles from "./AboutSection.module.css";
 import images from "../../images/images";
-import React from "react";
 
 export const AboutSection = () => {
     return(

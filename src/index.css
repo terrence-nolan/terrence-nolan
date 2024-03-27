@@ -23,6 +23,8 @@ code {
   --opaque-prim-blue: rgba(24, 136, 226, 0.3);
   --text-hover: #0C4471;
   --github: #000000;
+  /*--toggle-fg: #f0eb9d;*/
+  --toggle-bg: #ffd000;
 }
 
 [data-theme="dark"] {
@@ -36,4 +38,6 @@ code {
   --opaque-prim-blue: rgba(24, 136, 226, 0.2);
   --text-hover: #B4CEE3;
   --github: #FFFFFF;
+  /*--toggle-fg: #283452;*/
+  --toggle-bg: #00a6ff;
 }

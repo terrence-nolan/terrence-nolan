@@ -1,11 +1,14 @@
 .bioContainer {
     margin-bottom: 9rem;
+    background-color: var(--background-color);
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .text {
     color: var(--primary-text);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .blueText {

@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
-import styles from './ProjectsPage.module.css';
+import styles from './ProjectsSection.module.css';
 import {ProjectCard} from "../../components/ProjectCard/ProjectCard";
 
-const ProjectsPage = () => {
+const ProjectsSection = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
 
@@ -33,4 +33,4 @@ const ProjectsPage = () => {
     );
 }
 
-export default ProjectsPage;
+export default ProjectsSection;
