@@ -14,12 +14,12 @@
     display: flex;
     align-items: center;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-blue);
     background-color: var(--opaque-prim-blue);
     width: fit-content;
     padding: 0.2rem 0.6rem;
-    margin: 0.6rem 0.6rem 0 0;
+    margin: 0.4rem 0.4rem 0 0;
     border-radius: 1rem;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }

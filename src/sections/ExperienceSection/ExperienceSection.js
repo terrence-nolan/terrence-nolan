@@ -1,17 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
 import styles from './ExperienceSection.module.css';
 import {ExperienceCard} from "../../components/ExperienceCard/ExperienceCard";
 
 const ExperienceSection = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-
-        document.title = "Terrence Nolan | Experience";
-
-        return () => {
-            document.title = "Terrence Nolan";
-        };
-    }, [])
 
     const chewyDescription = [
         "Extracted the My Pet Health page UI from microsite framework and implemented it into a Single Page Application which resulted in performance increase of 160% according to Google Lighthouse.",

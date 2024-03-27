@@ -4,6 +4,8 @@ import styles from './BioSection.module.css';
 export const BioSection = () => {
     return(
         <section className={styles.bioContainer}>
+            <span className={styles.sectionTitle}>About Me</span>
+            <div className={styles.underline}/>
             <p className={styles.text}>Hi, my name is Terrence Nolan. I am a senior CS student looking for a
                 full time SWE role, with a budding passion for front-end engineering and building
                 aesthetic projects.</p>

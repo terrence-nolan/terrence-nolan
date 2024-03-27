@@ -1,20 +1,11 @@
-import React, {useEffect} from "react";
+import React from "react";
 import styles from './ProjectsSection.module.css';
 import {ProjectCard} from "../../components/ProjectCard/ProjectCard";
 
 const ProjectsSection = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-
-        document.title = "Terrence Nolan | Projects";
-
-        return () => {
-            document.title = "Terrence Nolan";
-        };
-    }, [])
 
     const punchcardSkills = ["React Native", "JavaScript", "CSS", "Expo Go", "Figma", "MongoDB", "Firebase"]
-    const v1Skills = ["React.js", "JavaScript", "CSS", "Firebase"]
+    const v1Skills = ["React.js", "JavaScript", "CSS", "Firebase", "Vercel"]
 
     return (
         <section className={styles.projectsMain}>
