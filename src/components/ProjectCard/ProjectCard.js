@@ -8,8 +8,8 @@ export const ProjectCard = ({
                                    projectName,
                                    projectLink,
                                    description,
-                                   links,
-                                   linkText,
+                                   otherLinks,
+                                   otherLinksText,
                                    skills,
                                }) => {
 
@@ -30,12 +30,12 @@ export const ProjectCard = ({
                     <p className={styles.description}>
                         {description}
                     </p>
-                    {links && linkText ?
+                    {otherLinks && otherLinksText ?
                         <ul className={styles.linksList}>
-                            {links.map((link, index) => (
+                            {otherLinks.map((link, index) => (
                                 <a href={link} className={styles.linkItem}>
                                     <div className={styles.linkItemContainer}>
-                                        <span key={index}><FontAwesomeIcon icon={faLink} /> {linkText}</span>
+                                        <span key={index}><FontAwesomeIcon icon={faLink} /> {otherLinksText}</span>
                                     </div>
                                 </a>
                             ))}
