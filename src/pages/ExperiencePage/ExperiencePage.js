@@ -14,10 +14,10 @@ const ExperiencePage = () => {
     }, [])
 
     const chewyDescription = [
-        "Extracted the My Pet Health page UI from microsite framework and implemented it into a SPA which resulted in performance increase of 160% in Google Lighthouse.",
-        "Deployment of the SPA generated savings of $14k annually through the elimination of an unnecessary EKS instance.",
+        "Extracted the My Pet Health page UI from microsite framework and implemented it into a Single Page Application which resulted in performance increase of 160% according to Google Lighthouse.",
+        "Deployment of the SPA generated $14k in annual savings through the elimination of an unnecessary AWS Elastic Kubernetes Service instance.",
         "Enhanced user experience through improvement of HTML accessibility and incorporation of company design system.",
-        "Gained experience working in an agile workflow system of sprints.",
+        "Gained experience working in an agile workflow system of sprints and epics.",
         "Initiated discussions with members of the product team to discuss certain design ideas and suggest additional capabilities for the page and its components."
     ];
     const chewySkills = ["React", "TypeScript", "HTML", "SCSS", "Jest", "Docker", "Jenkins"];
