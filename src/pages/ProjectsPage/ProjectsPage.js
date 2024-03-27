@@ -13,7 +13,7 @@ const ProjectsPage = () => {
         };
     }, [])
 
-    const punchcardSkills = ["React Native", "JavaScript", "CSS", "Expo Go", "Figma", "MongoDB"]
+    const punchcardSkills = ["React Native", "JavaScript", "CSS", "Expo Go", "Figma", "MongoDB", "Firebase"]
 
     return (
         <section className={styles.projectsMain}>
