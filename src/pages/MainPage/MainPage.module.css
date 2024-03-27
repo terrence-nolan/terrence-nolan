@@ -76,6 +76,7 @@
     }
 
     .aboutContainer {
+        height: 100vh;
         position: sticky;
         top: 0;
         padding: 6rem 0;
