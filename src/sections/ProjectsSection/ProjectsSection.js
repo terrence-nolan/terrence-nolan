@@ -14,6 +14,7 @@ const ProjectsSection = () => {
     }, [])
 
     const punchcardSkills = ["React Native", "JavaScript", "CSS", "Expo Go", "Figma", "MongoDB", "Firebase"]
+    const v1Skills = ["React.js", "JavaScript", "CSS", "Firebase"]
 
     return (
         <section className={styles.projectsMain}>
@@ -27,6 +28,12 @@ const ProjectsSection = () => {
                         " schedules through claiming, transferring, and dropping posted shifts. " +
                         "I designed and built the front end of the application."}
                     skills={punchcardSkills}
+                />
+                <ProjectCard
+                    projectName={"terrencenolan.com V1"}
+                    projectLink={"https://terrence-nolan-v1.vercel.app/"}
+                    description={"The first version of my personal website."}
+                    skills={v1Skills}
                 />
             </ol>
         </section>
