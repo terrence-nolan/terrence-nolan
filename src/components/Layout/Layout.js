@@ -20,7 +20,6 @@ const Layout = ({ children, toggleTheme, theme }) => {
 
     return (
         <div>
-            <Header scrolled={scrolled} toggleTheme={toggleTheme} theme={theme} />
             <main>{children}</main>
             <Footer />
         </div>

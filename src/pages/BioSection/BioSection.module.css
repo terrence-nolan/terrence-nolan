@@ -12,3 +12,9 @@
 .blueText {
     color: var(--primary-blue);
 }
+
+@media (max-width: 480px) {
+    .bioContainer {
+        margin-bottom: 4rem;
+    }
+}

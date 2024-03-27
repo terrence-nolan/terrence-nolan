@@ -32,6 +32,14 @@
     text-decoration: none;
 }
 
+.arrowIconContainer {
+    font-size: 0.7rem;
+}
+
+.arrowIcon {
+    transition: transform 0.25s ease-in-out;
+}
+
 .dates {
     display: flex;
     flex-direction: column;
@@ -45,6 +53,9 @@
     background-color: var(--foreground-color);
     .headerText {
         color: var(--primary-blue);
+    }
+    .arrowIcon {
+        transform: translateX(0.25rem) translateY(-0.25rem);
     }
 }
 

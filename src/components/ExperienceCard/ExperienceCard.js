@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./ExperienceCard.module.css";
-import {faLink} from "@fortawesome/free-solid-svg-icons";
+import {faLink, faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {SkillsList} from "../SkillsList/SkillsList";
 
@@ -26,7 +26,9 @@ export const ExperienceCard = ({
                     </header>
                     <div className={styles.info}>
                         <div className={styles.cardHeader}>
-                            <span className={styles.headerText}>{positionTitle} • {companyName}</span>
+                            <span className={styles.headerText}>
+                                {positionTitle} • {companyName} <span className={styles.arrowIconContainer}><FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.arrowIcon} /></span>
+                            </span>
                             <span className={styles.locationText}>{companyLocation}</span>
                         </div>
                         <ul className={styles.descriptionList}>
