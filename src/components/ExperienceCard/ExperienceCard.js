@@ -43,7 +43,7 @@ export const ExperienceCard = ({
                     {links && linkText ?
                         <ul className={styles.linksList}>
                             {links.map((link, index) => (
-                                <a href={link} className={styles.linkItem}>
+                                <a key={index} href={link} className={styles.linkItem}>
                                     <div className={styles.linkItemContainer}>
                                         <span key={index}><FontAwesomeIcon icon={faLink} /> {linkText}</span>
                                     </div>
