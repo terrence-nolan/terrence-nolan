@@ -11,6 +11,7 @@ const ConnectionLinks = () => {
             <a
                 href={'mailto:terrencenolan@proton.me'}
                 className={styles.link}
+                title={"Email"}
             >
                 <FontAwesomeIcon icon={faEnvelope} />
             </a>
@@ -19,6 +20,7 @@ const ConnectionLinks = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
+                title={"GitHub"}
             >
                 <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -27,6 +29,7 @@ const ConnectionLinks = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
+                title={"LinkedIn"}
             >
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -35,8 +38,9 @@ const ConnectionLinks = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
+                title={"Resume"}
             >
-                <FontAwesomeIcon icon={faFile} /><span className={styles.linkText}> Resume</span>
+                <FontAwesomeIcon icon={faFile} /><span className={styles.linkText}>Resume</span>
             </a>
         </div>
     )

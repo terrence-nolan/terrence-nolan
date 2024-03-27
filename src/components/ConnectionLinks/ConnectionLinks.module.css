@@ -2,15 +2,18 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
     margin: 1rem 0 0 0;
     width: 100%;
 }
 
 .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: var(--primary-text);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
@@ -19,18 +22,20 @@
 }
 
 .linkText {
+    font-size: 0.9rem;
     font-weight: 500;
+    margin-left: 0.4rem;
 }
 
 @media (max-width: 480px) {
-    .link {
-        margin: 0 0.5rem;
+    .connectLinksContainer {
+        gap: 1.5rem;
     }
 }
 
 @media (min-width: 481px) and (max-width: 1084px) {
-    .link {
-        margin: 0 1rem;
+    .connectLinksContainer {
+        gap: 1.5rem;
     }
 }
 

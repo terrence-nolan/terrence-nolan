@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './AboutPage.module.css';
-import {SkillsAndTechPage} from "../SkillsAndTechPage/SkillsAndTechPage";
+import {SkillsAndTechSection} from "../SkillsAndTechSection/SkillsAndTechSection";
 import ExperiencePage from "../ExperiencePage/ExperiencePage";
 import {AboutSection} from "../AboutSection/AboutSection";
 import ConnectionLinks from "../../components/ConnectionLinks/ConnectionLinks";
@@ -22,7 +22,7 @@ const AboutPage = () => {
         <main className={styles.mainContainer}>
             <div className={styles.aboutContainer}>
                 <AboutSection />
-                <SkillsAndTechPage />
+                <SkillsAndTechSection />
                 <ConnectionLinks />
             </div>
             <div className={styles.pagesContainer}>
