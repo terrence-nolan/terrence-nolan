@@ -23,7 +23,8 @@ const ProjectsSection = () => {
                 <ProjectCard
                     projectName={"terrencenolan.com V1"}
                     projectLink={"https://terrence-nolan-v1.vercel.app/"}
-                    description={"The first version of my personal website."}
+                    description={"The first version of my personal website. " +
+                        "Built with React and CSS. Originally hosted on Firebase. Now hosted on Vercel."}
                     skills={v1Skills}
                 />
             </ol>
