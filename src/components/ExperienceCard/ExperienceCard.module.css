@@ -16,10 +16,6 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-.card:hover .headerContainer {
-    color: var(--primary-blue);
-}
-
 .dates {
     display: flex;
     flex-direction: column;
@@ -163,6 +159,9 @@
 
     .card:hover {
         background-color: var(--foreground-color);
+        .headerContainer {
+            color: var(--primary-blue);
+        }
     }
 
     .leftText {
