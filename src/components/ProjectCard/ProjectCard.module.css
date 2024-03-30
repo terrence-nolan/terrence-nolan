@@ -16,10 +16,6 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-.card:hover .headerContainer {
-    color: var(--primary-blue);
-}
-
 .info {
     width: 100%;
 }
@@ -56,12 +52,13 @@
     transition: transform 0.25s ease-in-out;
 }
 
-.projectLink:hover .arrowIcon {
-    transform: translateX(0.25rem) translateY(-0.25rem);
-}
-
-.projectLink:hover .headerContainer {
-    color: var(--secondary-blue);
+.projectLink:hover {
+    .arrowIcon {
+        transform: translateX(0.25rem) translateY(-0.25rem);
+    }
+    .headerContainer {
+        color: var(--secondary-blue);
+    }
 }
 
 .description {
@@ -133,6 +130,15 @@
             color: var(--primary-blue);
         }
     }
+
+    .projectLink:hover {
+        .arrowIcon {
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+        .headerContainer {
+            color: var(--secondary-blue);
+        }
+    }
 }
 
 @media (min-width: 1025px) {
@@ -148,6 +154,18 @@
 
     .card:hover {
         background-color: var(--foreground-color);
+        .headerContainer {
+            color: var(--primary-blue);
+        }
+    }
+
+    .projectLink:hover {
+        .arrowIcon {
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+        .headerContainer {
+            color: var(--secondary-blue);
+        }
     }
 
     .leftText {

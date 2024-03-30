@@ -60,12 +60,13 @@
     transition: transform 0.25s ease-in-out;
 }
 
-.companyLink:hover .arrowIcon {
-    transform: translateX(0.25rem) translateY(-0.25rem);
-}
-
-.companyLink:hover .headerContainer {
-    color: var(--secondary-blue);
+.companyLink:hover {
+    .arrowIcon {
+        transform: translateX(0.25rem) translateY(-0.25rem);
+    }
+    .headerContainer {
+        color: var(--secondary-blue);
+    }
 }
 
 .locationText {
@@ -144,6 +145,15 @@
             color: var(--primary-blue);
         }
     }
+
+    .companyLink:hover {
+        .arrowIcon {
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+        .headerContainer {
+            color: var(--secondary-blue);
+        }
+    }
 }
 
 @media (min-width: 1025px) {
@@ -161,6 +171,15 @@
         background-color: var(--foreground-color);
         .headerContainer {
             color: var(--primary-blue);
+        }
+    }
+
+    .companyLink:hover {
+        .arrowIcon {
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+        .headerContainer {
+            color: var(--secondary-blue);
         }
     }
 
