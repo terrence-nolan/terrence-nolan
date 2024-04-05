@@ -18,6 +18,8 @@ const ProjectsSection = () => {
                     description={"Shift scheduling mobile application in which employees are able to build their own" +
                         " schedules through claiming, transferring, and dropping posted shifts. " +
                         "I designed and built the front end of the application."}
+                    otherLinks={["https://github.com/punchcard-ems/ems"]}
+                    otherLinksText={["GitHub"]}
                     skills={punchcardSkills}
                 />
                 <ProjectCard
@@ -25,6 +27,8 @@ const ProjectsSection = () => {
                     projectLink={"https://terrence-nolan-v1.vercel.app/"}
                     description={"The first version of my personal website. " +
                         "Built with React and CSS. Originally hosted on Firebase. Now hosted on Vercel."}
+                    otherLinks={["https://github.com/terrence-nolan/terrence-nolan"]}
+                    otherLinksText={["GitHub"]}
                     skills={v1Skills}
                 />
             </ol>

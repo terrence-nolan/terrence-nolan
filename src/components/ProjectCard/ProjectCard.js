@@ -45,6 +45,7 @@ export const ProjectCard = ({
                                     rel="noopener noreferrer"
                                     className={styles.linkItem}
                                     title={otherLinksText}
+                                    key={index}
                                 >
                                     <div className={styles.linkItemContainer}>
                                         <span key={index}><FontAwesomeIcon icon={faLink} /> {otherLinksText}</span>
