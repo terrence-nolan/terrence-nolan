@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './ConnectionLinks.module.css';
-import ResumePDF from './../../utils/terrence-nolan-resume.pdf';
+import ResumePDF from './../../utils/Terrence_Nolan_Resume.pdf';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faFile} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
