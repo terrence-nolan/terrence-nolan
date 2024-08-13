@@ -11,26 +11,26 @@ import {DarkModeToggle} from "../../components/DarkModeToggle/DarkModeToggle";
 import Footer from "../../components/Footer/Footer";
 
 const MainPage = () => {
-    const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const [isDark, setIsDark] = useLocalStorage("isDark", preference);
+  const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [isDark, setIsDark] = useLocalStorage("isDark", preference);
 
-    return (
-        <main data-theme={isDark ? "dark" : "light"}>
-            <div className={styles.mainContainer}>
-                <DarkModeToggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
-                <div className={styles.aboutContainer}>
-                    <AboutSection />
-                    <SkillsAndTechSection />
-                    <ConnectionLinks />
-                </div>
-                <div className={styles.pagesContainer}>
-                    <BioSection />
-                    <ExperienceSection />
-                    <ProjectsSection />
-                </div>
-            </div>
-            <Footer />
-        </main>
-    );
+  return (
+    <main data-theme={isDark ? "dark" : "light"}>
+      <div className={styles.mainContainer}>
+        <DarkModeToggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
+        <div className={styles.aboutContainer}>
+          <AboutSection />
+          <SkillsAndTechSection />
+          <ConnectionLinks />
+        </div>
+        <div className={styles.pagesContainer}>
+          <BioSection />
+          <ExperienceSection />
+          <ProjectsSection />
+        </div>
+      </div>
+      <Footer />
+    </main>
+  );
 }
 export default MainPage;

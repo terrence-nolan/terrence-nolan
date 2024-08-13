@@ -1,84 +1,84 @@
 .mainContainer {
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .pageContent {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--primary-text);
-    background-color: var(--background-color);
-    padding: 6rem 0;
-    overflow-x: hidden;
-    max-height: fit-content;
-    font-size: calc(10px + 2vmin);
-    width: 40%;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--primary-text);
+  background-color: var(--background-color);
+  padding: 6rem 0;
+  overflow-x: hidden;
+  max-height: fit-content;
+  font-size: calc(10px + 2vmin);
+  width: 40%;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .pagesContainer {
-    background-color: var(--background-color);
-    padding: 6rem 0;
-    width: 60%;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  background-color: var(--background-color);
+  padding: 6rem 0;
+  width: 60%;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 @media (max-width: 480px) {
-    .mainContainer {
-        justify-content: flex-start;
-        gap: 0;
-        padding: 3rem 1.5rem;
-    }
+  .mainContainer {
+    justify-content: flex-start;
+    gap: 0;
+    padding: 3rem 1.5rem;
+  }
 
-    .aboutContainer {
-        padding: 0;
-        width: 100%;
-    }
+  .aboutContainer {
+    padding: 0;
+    width: 100%;
+  }
 
-    .pagesContainer {
-        padding: 1rem 0;
-        width: 100%;
-    }
+  .pagesContainer {
+    padding: 1rem 0;
+    width: 100%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-    .mainContainer {
-        justify-content: flex-start;
-        gap: 0;
-        padding: 3rem 1.5rem;
-    }
+  .mainContainer {
+    justify-content: flex-start;
+    gap: 0;
+    padding: 3rem 1.5rem;
+  }
 
-    .aboutContainer {
-        padding: 0;
-        width: 100%;
-    }
+  .aboutContainer {
+    padding: 0;
+    width: 100%;
+  }
 
-    .pagesContainer {
-        padding: 6rem 0 0 0;
-        width: 100%;
-    }
+  .pagesContainer {
+    padding: 6rem 0 0 0;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
-    .mainContainer {
-        flex-direction: row;
-        padding: 0 6rem;
-    }
+  .mainContainer {
+    flex-direction: row;
+    padding: 0 6rem;
+  }
 
-    .aboutContainer {
-        height: 100vh;
-        position: sticky;
-        top: 0;
-        padding: 6rem 0;
-    }
+  .aboutContainer {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 6rem 0;
+  }
 }

@@ -1,41 +1,41 @@
 .sectionTitle {
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: var(--primary-text);
-    padding: 0.2rem 0;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--primary-text);
+  padding: 0.2rem 0;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .underline {
-    background-color: var(--primary-blue);
-    height: 0.1rem;
+  background-color: var(--primary-blue);
+  height: 0.1rem;
 }
 
 .bioContainer {
-    margin-bottom: 9rem;
-    background-color: var(--background-color);
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  margin-bottom: 9rem;
+  background-color: var(--background-color);
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .text {
-    color: var(--primary-text);
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  color: var(--primary-text);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .blueText {
-    color: var(--primary-blue);
+  color: var(--primary-blue);
 }
 
 @media (max-width: 480px) {
-    .bioContainer {
-        margin-bottom: 4rem;
-    }
+  .bioContainer {
+    margin-bottom: 4rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1084px) {
-    .bioContainer {
-        margin-bottom: 4rem;
-    }
+  .bioContainer {
+    margin-bottom: 4rem;
+  }
 }

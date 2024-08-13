@@ -1,42 +1,42 @@
 .toggleContainer {
-    position: absolute;
-    top: 0;
-    right: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
 }
 
 .toggle {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .toggle+label {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--primary-text);
-    transition: color 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--primary-text);
+  transition: color 0.25s ease-in-out;
 }
 
 .toggle+label::before {
-    content: "";
-    height: 1.5rem;
-    width: 3rem;
-    border-radius: 1rem;
-    background-color: var(--toggle-bg);
-    transition: background-color 0.25s ease-in-out;
+  content: "";
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1rem;
+  background-color: var(--toggle-bg);
+  transition: background-color 0.25s ease-in-out;
 }
 
 .toggle+label::after {
-    content: "";
-    height: 1.1rem;
-    width: 1.1rem;
-    border-radius: 1rem;
-    background-color: var(--primary-text);
-    position: absolute;
-    right: 1.6rem;
-    transition: background-color 0.25s ease-in-out, transform 0.250s ease-in-out;
+  content: "";
+  height: 1.1rem;
+  width: 1.1rem;
+  border-radius: 1rem;
+  background-color: var(--primary-text);
+  position: absolute;
+  right: 1.6rem;
+  transition: background-color 0.25s ease-in-out, transform 0.250s ease-in-out;
 }
 
 .toggle:checked+label::after {
-    transform: translateX(1.3rem);
+  transform: translateX(1.3rem);
 }
