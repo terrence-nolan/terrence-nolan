@@ -1,20 +1,20 @@
 import React from 'react';
 import styles from "./ExperienceCard.module.css";
-import {faLink, faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {SkillsList} from "../SkillsList/SkillsList";
+import { faLink, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SkillsList } from "../SkillsList/SkillsList";
 
 export const ExperienceCard = ({
-                                   companyName,
-                                   companyLocation,
-                                   companyLink,
-                                   positionTitle,
-                                   startDate,
-                                   endDate,
-                                   description,
-                                   links,
-                                   linkText,
-                                   skills,
+    companyName,
+    companyLocation,
+    companyLink,
+    positionTitle,
+    startDate,
+    endDate,
+    description,
+    links,
+    linkText,
+    skills,
 }) => {
 
     return (
