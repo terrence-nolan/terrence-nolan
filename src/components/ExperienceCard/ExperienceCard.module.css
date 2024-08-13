@@ -60,13 +60,12 @@
     transition: transform 0.25s ease-in-out;
 }
 
-.companyLink:hover {
-    .arrowIcon {
-        transform: translateX(0.25rem) translateY(-0.25rem);
-    }
-    .headerContainer {
-        color: var(--secondary-blue);
-    }
+.companyLink:hover .arrowIcon {
+    transform: translateX(0.25rem) translateY(-0.25rem);
+}
+
+.companyLink:hover .headerContainer {
+    color: var(--secondary-blue);
 }
 
 .locationText {
@@ -145,18 +144,18 @@
 
     .card:hover {
         background-color: var(--foreground-color);
-        .headerContainer {
-            color: var(--primary-blue);
-        }
     }
 
-    .companyLink:hover {
-        .arrowIcon {
-            transform: translateX(0.25rem) translateY(-0.25rem);
-        }
-        .headerContainer {
-            color: var(--secondary-blue);
-        }
+    .card:hover .headerContainer {
+        color: var(--primary-blue);
+    }
+
+    .companyLink:hover .arrowIcon {
+        transform: translateX(0.25rem) translateY(-0.25rem);
+    }
+
+    .companyLink:hover .headerContainer {
+        color: var(--secondary-blue);
     }
 }
 
@@ -173,18 +172,18 @@
 
     .card:hover {
         background-color: var(--foreground-color);
-        .headerContainer {
-            color: var(--primary-blue);
-        }
     }
 
-    .companyLink:hover {
-        .arrowIcon {
-            transform: translateX(0.25rem) translateY(-0.25rem);
-        }
-        .headerContainer {
-            color: var(--secondary-blue);
-        }
+    .card:hover .headerContainer {
+        color: var(--primary-blue);
+    }
+
+    .companyLink:hover .arrowIcon {
+        transform: translateX(0.25rem) translateY(-0.25rem);
+    }
+
+    .companyLink:hover .headerContainer {
+        color: var(--secondary-blue);
     }
 
     .leftText {
