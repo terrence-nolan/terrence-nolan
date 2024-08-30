@@ -6,7 +6,7 @@ export const AboutSection = () => {
   return(
     <div className={styles.introContainer}>
       <header className={styles.photoAndName}>
-        <img src={images.tjPortrait} alt="Terrence Nolan Portrait" className={styles.image} />
+        <img src={images.tjHeadshot} alt="Terrence Nolan Headshot" className={styles.image} />
         <h1 className={styles.name}><span className={styles.firstName}>Terrence</span> Nolan</h1>
       </header>
       <div className={styles.textContainer}>
