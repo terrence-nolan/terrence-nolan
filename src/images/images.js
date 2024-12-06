@@ -1,7 +1,5 @@
 const images = {
-    chewyPresentation: require('./intern-presentation.JPG'),
-    tjPortrait: require('./tj-portrait.JPG'),
-    tjHeadshot: require('./tj-nolan-headshot.jpeg'),
+    tjHeadshot: require('./tj-nolan-headshot-100kb.jpeg'),
 };
 
 export default images;
