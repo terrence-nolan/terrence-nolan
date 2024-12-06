@@ -10,8 +10,7 @@ export const AboutSection = () => {
         <h1 className={styles.name}><span className={styles.firstName}>Terrence</span> Nolan</h1>
       </header>
       <div className={styles.textContainer}>
-        <span className={styles.position}><span className={styles.blueText}>CS</span> @ Villanova University</span>
-        <span className={styles.text}>Expected Graduation: <span className={styles.blueText}>May 2024</span></span>
+        <span className={styles.position}><span className={styles.blueText}>Software Engineer</span> @ Chewy</span>
       </div>
     </div>
   )

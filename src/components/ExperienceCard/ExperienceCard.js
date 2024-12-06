@@ -42,7 +42,7 @@ export const ExperienceCard = ({
             <span className={styles.locationText}>{companyLocation}</span>
           </div>
           <ul className={styles.descriptionList}>
-            {description.map((line, index) => (
+            {description && description.map((line, index) => (
               <li key={index}>{line}</li>
             ))}
           </ul>

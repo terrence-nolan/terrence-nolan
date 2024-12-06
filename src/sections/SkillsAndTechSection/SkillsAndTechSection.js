@@ -3,7 +3,7 @@ import styles from './SkillsAndTechSection.module.css';
 import {SkillsList} from "../../components/SkillsList/SkillsList";
 
 export const SkillsAndTechSection = () => {
-  const languages = ["JavaScript", "TypeScript", "Java", "Python", "HTML/CSS", "SQL"]
+  const languages = ["JavaScript", "TypeScript", "HTML/CSS", "SQL", "Java", "Python"]
   const toolsAndFrameworks = ["React.js", "React Native", "Expo Go", "Jest", "Git", "Jupyter Notebook", "Firebase", "Docker", "Jenkins", "Figma"]
 
   return (
