@@ -81,7 +81,7 @@
 .linkItemContainer {
   font-size: 0.8rem;
   color: var(--primary-text);
-  background-color: var(--background-color);
+  background-color: var(--foreground-color);
   width: fit-content;
   padding: 0.2rem 0.6rem;
   border-radius: 1rem;
@@ -134,6 +134,10 @@
 
   .card:hover .headerContainer {
     color: var(--primary-blue);
+  }
+
+  .card:hover .linkItemContainer {
+    background-color: var(--background-color);
   }
 
   .projectLink:hover .arrowIcon {
