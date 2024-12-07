@@ -77,6 +77,8 @@ const ExperienceSection = () => {
           endDate={"MAY 2023"}
           positionTitle={"Software Development Intern"}
           description={augustinianDescription}
+          links={["https://osacuria.wixsite.com/augustinian-spiritua"]}
+          linkText={["Institute of Augustine Spirituality Site"]}
           skills={augustinianSkills}
         />
         <ExperienceCard

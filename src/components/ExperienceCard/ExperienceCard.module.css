@@ -125,7 +125,7 @@
   }
 
   .linkItemContainer {
-    padding: 0.2rem 0.6rem 0.2rem 0;
+    padding: 0.2rem 0.6rem;
   }
 
   .rightText {
@@ -148,6 +148,10 @@
 
   .card:hover .headerContainer {
     color: var(--primary-blue);
+  }
+
+  .card:hover .linkItemContainer {
+    background-color: var(--background-color);
   }
 
   .companyLink:hover .arrowIcon {
